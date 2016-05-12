@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   3884081,      99955]
-NotebookOptionsPosition[   3883212,      99925]
-NotebookOutlinePosition[   3883571,      99941]
-CellTagsIndexPosition[   3883528,      99938]
+NotebookDataLength[   3880004,      99904]
+NotebookOptionsPosition[   3879134,      99874]
+NotebookOutlinePosition[   3879493,      99890]
+CellTagsIndexPosition[   3879450,      99887]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -838,23 +838,22 @@ Cell[BoxData[{
             "]"}], "\[Equal]", "2"}], ",", " ", 
           RowBox[{"HWG", "=", 
            RowBox[{"1", "/", 
-            RowBox[{"(", 
-             RowBox[{"Product", "[", 
-              RowBox[{
-               RowBox[{"1", "-", 
-                RowBox[{
-                 SubscriptBox["m", "l"], 
-                 SubscriptBox["m", 
-                  RowBox[{"nSer", "+", "1", "-", "l"}]], 
-                 RowBox[{"t", "^", 
-                  RowBox[{"{", 
-                   RowBox[{"2", "l"}], "}"}]}]}]}], ",", 
-               RowBox[{"{", 
-                RowBox[{"l", ",", "1", ",", 
-                 RowBox[{"nn", "\[LeftDoubleBracket]", 
-                  RowBox[{"i", ",", "1"}], "\[RightDoubleBracket]"}]}], 
-                "}"}]}], "]"}], ")"}]}]}]}], " ", "]"}], ";", 
-        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+            RowBox[{"Product", "[", 
+             RowBox[{
+              RowBox[{"1", "-", 
+               RowBox[{
+                SubscriptBox["m", "l"], 
+                SubscriptBox["m", 
+                 RowBox[{"nSer", "+", "1", "-", "l"}]], 
+                RowBox[{"t", "^", 
+                 RowBox[{"(", 
+                  RowBox[{"2", "l"}], ")"}]}]}]}], ",", 
+              RowBox[{"{", 
+               RowBox[{"l", ",", "1", ",", 
+                RowBox[{"nn", "\[LeftDoubleBracket]", 
+                 RowBox[{"i", ",", "1"}], "\[RightDoubleBracket]"}]}], 
+               "}"}]}], "]"}]}]}]}], " ", "]"}], ";", "\[IndentingNewLine]", 
+        "\[IndentingNewLine]", 
         RowBox[{"(*", 
          RowBox[{
           RowBox[{"modified", " ", "Hall"}], "-", 
@@ -1147,14 +1146,16 @@ Cell[BoxData[{
    3.671878823464905*^9}, {3.671878909597115*^9, 3.671878938461555*^9}, 
    3.671878969232977*^9, {3.67187902708158*^9, 3.6718790403414087`*^9}, {
    3.6719552968138437`*^9, 3.67195532314699*^9}, {3.671955835005748*^9, 
-   3.671955908679532*^9}, {3.6719559844401693`*^9, 3.6719559949474983`*^9}}],
+   3.671955908679532*^9}, {3.6719559844401693`*^9, 3.6719559949474983`*^9}, {
+   3.672044921670641*^9, 3.672044938563753*^9}, {3.67204498757717*^9, 
+   3.672044991363555*^9}}],
 
 Cell[BoxData[
  RowBox[{" ", 
   RowBox[{
    RowBox[{"Export", "[", 
     RowBox[{"\"\<A15.gif\>\"", ",", 
-     RowBox[{"Aseries", "[", "10", "]"}], ",", 
+     RowBox[{"Aseries", "[", "3", "]"}], ",", 
      RowBox[{"ImageSize", " ", "\[Rule]", " ", "1366"}]}], "]"}], 
    ";"}]}]], "Input",
  CellChangeTimes->{
@@ -1167,7 +1168,8 @@ Cell[BoxData[
    3.671986247282494*^9, 3.671986303318632*^9}, {3.67198634358291*^9, 
    3.671986344572627*^9}, {3.671986415037467*^9, 3.6719864165989017`*^9}, {
    3.671986534753357*^9, 3.671986537451136*^9}, {3.671986603866723*^9, 
-   3.671986604554966*^9}, {3.671986801655603*^9, 3.671986802188452*^9}}],
+   3.671986604554966*^9}, {3.671986801655603*^9, 3.671986802188452*^9}, {
+   3.6720443766561127`*^9, 3.672044376903227*^9}}],
 
 Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.671955735906995*^9, 3.6719557366986933`*^9}}],
@@ -1225,7 +1227,9 @@ Cell[BoxData[{
    3.669098658138208*^9, 3.669098661391839*^9}, 3.669716731299735*^9, {
    3.669734157738326*^9, 3.6697341585277643`*^9}, 3.6706428533525295`*^9, 
    3.6706607142717085`*^9, {3.670660744862714*^9, 3.6706607532527184`*^9}, 
-   3.670660799147728*^9, {3.670676484191367*^9, 3.670676485348411*^9}}],
+   3.670660799147728*^9, {3.670676484191367*^9, 3.670676485348411*^9}, {
+   3.6720449639452953`*^9, 3.672044965249283*^9}, {3.6720450289191504`*^9, 
+   3.672045029552608*^9}}],
 
 Cell[BoxData[
  TabViewBox[{{1,"1"->
@@ -1299,12 +1303,11 @@ Cell[BoxData[
           RowBox[{"(", 
             RowBox[{"1", "-", 
               SuperscriptBox["t", "2"]}], ")"}], "2"]], 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{"1", "-", 
-             RowBox[{
-               SuperscriptBox["t", "2"], " ", 
-               SubsuperscriptBox["m", "1", "2"]}]}]], "}"}], "1"}}, 
+        FractionBox["1", 
+         RowBox[{"1", "-", 
+           RowBox[{
+             SuperscriptBox["t", "2"], " ", 
+             SubsuperscriptBox["m", "1", "2"]}]}]], "1"}}, 
       GridBoxAlignment -> {"Columns" -> {{Left}}}, AutoDelete -> False, 
       GridBoxBackground -> {"Columns" -> {{None}}, "Rows" -> {
           RGBColor[1, 1, 0.85]}}, 
@@ -1412,13 +1415,12 @@ TraditionalForm]\\)\""},
           RowBox[{"(", 
             RowBox[{"1", "-", 
               SuperscriptBox["t", "2"]}], ")"}], "4"]], 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{"1", "-", 
-             RowBox[{
-               SuperscriptBox["t", "2"], " ", 
-               SubscriptBox["m", "1"], " ", 
-               SubscriptBox["m", "2"]}]}]], "}"}], 
+        FractionBox["1", 
+         RowBox[{"1", "-", 
+           RowBox[{
+             SuperscriptBox["t", "2"], " ", 
+             SubscriptBox["m", "1"], " ", 
+             SubscriptBox["m", "2"]}]}]], 
         RowBox[{"1", "-", 
           RowBox[{
             SuperscriptBox["t", "4"], " ", 
@@ -1605,13 +1607,12 @@ TraditionalForm]\\)\""},
           RowBox[{"(", 
             RowBox[{"1", "-", 
               SuperscriptBox["t", "2"]}], ")"}], "6"]], 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{"1", "-", 
-             RowBox[{
-               SuperscriptBox["t", "2"], " ", 
-               SubscriptBox["m", "1"], " ", 
-               SubscriptBox["m", "3"]}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{"1", "-", 
+           RowBox[{
+             SuperscriptBox["t", "2"], " ", 
+             SubscriptBox["m", "1"], " ", 
+             SubscriptBox["m", "3"]}]}]], "\"...\""}, {
         RowBox[{"{", 
           
           TemplateBox[{"2", "2"}, "Superscript", SyntaxForm -> 
@@ -1655,20 +1656,19 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {5., 0}]}}, ImageSize -> {60, 40}],
          "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubsuperscriptBox["m", "2", "2"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "3"]}]}], ")"}]}]], "}"}], 
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubsuperscriptBox["m", "2", "2"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "3"]}]}], ")"}]}]], 
         RowBox[{"1", "+", 
           RowBox[{
             SuperscriptBox["t", "6"], " ", 
@@ -1900,6 +1900,7 @@ TraditionalForm]\\)\""},
         "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"2", ",", 
+            
             TemplateBox[{"1", "3"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], "8", "4", 
         RowBox[{"{", 
@@ -1960,13 +1961,12 @@ TraditionalForm]\\)\""},
           RowBox[{"(", 
             RowBox[{"1", "-", 
               SuperscriptBox["t", "2"]}], ")"}], "8"]], 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{"1", "-", 
-             RowBox[{
-               SuperscriptBox["t", "2"], " ", 
-               SubscriptBox["m", "1"], " ", 
-               SubscriptBox["m", "4"]}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{"1", "-", 
+           RowBox[{
+             SuperscriptBox["t", "2"], " ", 
+             SubscriptBox["m", "1"], " ", 
+             SubscriptBox["m", "4"]}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{
             
@@ -2017,21 +2017,20 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {7.5, 0}]}}, 
          ImageSize -> {75, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "3"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "4"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "3"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "4"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", 
             
@@ -2468,13 +2467,12 @@ TraditionalForm]\\)\""},
           RowBox[{"(", 
             RowBox[{"1", "-", 
               SuperscriptBox["t", "2"]}], ")"}], "10"]], 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{"1", "-", 
-             RowBox[{
-               SuperscriptBox["t", "2"], " ", 
-               SubscriptBox["m", "1"], " ", 
-               SubscriptBox["m", "5"]}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{"1", "-", 
+           RowBox[{
+             SuperscriptBox["t", "2"], " ", 
+             SubscriptBox["m", "1"], " ", 
+             SubscriptBox["m", "5"]}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{
             
@@ -2532,21 +2530,20 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {10., 0}]}}, 
          ImageSize -> {90, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "4"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "5"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "4"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "5"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           
           TemplateBox[{"2", "3"}, "Superscript", SyntaxForm -> 
@@ -2598,26 +2595,25 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {10., 0}]}}, 
          ImageSize -> {90, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubsuperscriptBox["m", "3", "2"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "4"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "5"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubsuperscriptBox["m", "3", "2"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "4"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "5"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", 
             
@@ -3240,13 +3236,12 @@ TraditionalForm]\\)\""},
           RowBox[{"(", 
             RowBox[{"1", "-", 
               SuperscriptBox["t", "2"]}], ")"}], "12"]], 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{"1", "-", 
-             RowBox[{
-               SuperscriptBox["t", "2"], " ", 
-               SubscriptBox["m", "1"], " ", 
-               SubscriptBox["m", "6"]}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{"1", "-", 
+           RowBox[{
+             SuperscriptBox["t", "2"], " ", 
+             SubscriptBox["m", "1"], " ", 
+             SubscriptBox["m", "6"]}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{
             
@@ -3309,21 +3304,20 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {12.5, 0}]}}, 
          ImageSize -> {105, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "5"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "6"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "5"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "6"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", 
             
@@ -3449,27 +3443,26 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {12.5, 0}]}}, 
          ImageSize -> {105, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "4"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "5"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "6"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "4"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "5"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "6"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", "2", ",", 
             
@@ -4373,13 +4366,12 @@ TraditionalForm]\\)\""},
           RowBox[{"(", 
             RowBox[{"1", "-", 
               SuperscriptBox["t", "2"]}], ")"}], "14"]], 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{"1", "-", 
-             RowBox[{
-               SuperscriptBox["t", "2"], " ", 
-               SubscriptBox["m", "1"], " ", 
-               SubscriptBox["m", "7"]}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{"1", "-", 
+           RowBox[{
+             SuperscriptBox["t", "2"], " ", 
+             SubscriptBox["m", "1"], " ", 
+             SubscriptBox["m", "7"]}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{
             
@@ -4446,21 +4438,20 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {15., 0}]}}, 
          ImageSize -> {120, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "6"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "7"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "6"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "7"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", 
             
@@ -4597,27 +4588,26 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {15., 0}]}}, 
          ImageSize -> {120, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "5"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "6"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "7"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "5"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "6"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "7"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           
           TemplateBox[{"2", "4"}, "Superscript", SyntaxForm -> 
@@ -4678,32 +4668,31 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {15., 0}]}}, 
          ImageSize -> {120, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "8"], " ", 
-                   SubsuperscriptBox["m", "4", "2"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "5"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "6"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "7"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "8"], " ", 
+                 SubsuperscriptBox["m", "4", "2"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "5"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "6"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "7"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", "2", ",", 
             
@@ -5522,6 +5511,7 @@ TraditionalForm]\\)\""},
           RowBox[{"5", ",", "3"}], "}"}], "50", "25", 
         RowBox[{"{", 
           RowBox[{
+            
             TemplateBox[{"2", "3"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
             
@@ -5973,7 +5963,8 @@ TraditionalForm]\\)\""},
           RGBColor[1, 1, 0.85]}}, 
       GridBoxFrame -> {"Columns" -> {{True}}, "Rows" -> {{True}}}, 
       GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{2}}}], 
-     "Grid"],"\"Moduli Space Quivers for Nilpotent Orbits of \
+     "Grid"],
+    "\"Moduli Space Quivers for Nilpotent Orbits of \
 \\!\\(\\*FormBox[SubscriptBox[\\\"\\\\\\\"A\\\\\\\"\\\", \\\"7\\\"], \
 TraditionalForm]\\)\""},
    "Labeled",
@@ -6136,13 +6127,12 @@ TraditionalForm]\\)\""},
           RowBox[{"(", 
             RowBox[{"1", "-", 
               SuperscriptBox["t", "2"]}], ")"}], "16"]], 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{"1", "-", 
-             RowBox[{
-               SuperscriptBox["t", "2"], " ", 
-               SubscriptBox["m", "1"], " ", 
-               SubscriptBox["m", "8"]}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{"1", "-", 
+           RowBox[{
+             SuperscriptBox["t", "2"], " ", 
+             SubscriptBox["m", "1"], " ", 
+             SubscriptBox["m", "8"]}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{
             
@@ -6213,21 +6203,20 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {17.5, 0}]}}, 
          ImageSize -> {135, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "7"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "8"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "7"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "8"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", 
             
@@ -6372,27 +6361,26 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {17.5, 0}]}}, 
          ImageSize -> {135, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "6"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "7"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "8"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "6"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "7"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "8"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{
             
@@ -6460,33 +6448,32 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {17.5, 0}]}}, 
          ImageSize -> {135, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "8"], " ", 
-                   SubscriptBox["m", "4"], " ", 
-                   SubscriptBox["m", "5"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "6"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "7"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "8"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "8"], " ", 
+                 SubscriptBox["m", "4"], " ", 
+                 SubscriptBox["m", "5"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "6"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "7"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "8"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", "2", ",", 
             
@@ -6953,7 +6940,6 @@ TraditionalForm]\\)\""},
          ImageSize -> {135, 40}], "\"...\"", "\"...\"", "\"...\""}, {
         RowBox[{"{", 
           RowBox[{
-            
             TemplateBox[{"3", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", "2", ",", "1"}], "}"}], "52", "26", 
         RowBox[{"{", 
@@ -8099,6 +8085,7 @@ TraditionalForm]\\)\""},
              SuperscriptBox]}], "}"}], "66", "33", 
         RowBox[{"{", 
           RowBox[{"3", ",", 
+            
             TemplateBox[{"1", "6"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], 
         GraphicsBox[{{
@@ -8677,13 +8664,12 @@ TraditionalForm]\\)\""},
           RowBox[{"(", 
             RowBox[{"1", "-", 
               SuperscriptBox["t", "2"]}], ")"}], "18"]], 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{"1", "-", 
-             RowBox[{
-               SuperscriptBox["t", "2"], " ", 
-               SubscriptBox["m", "1"], " ", 
-               SubscriptBox["m", "9"]}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{"1", "-", 
+           RowBox[{
+             SuperscriptBox["t", "2"], " ", 
+             SubscriptBox["m", "1"], " ", 
+             SubscriptBox["m", "9"]}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{
             
@@ -8758,21 +8744,20 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {20., 0}]}}, 
          ImageSize -> {150, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "8"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "9"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "8"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "9"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", 
             
@@ -8925,30 +8910,28 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {20., 0}]}}, 
          ImageSize -> {150, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "7"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "8"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "9"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "7"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "8"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "9"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", "2", ",", 
-            
             TemplateBox[{"1", "5"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], "46", "23", 
         RowBox[{"{", 
@@ -9099,33 +9082,32 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {20., 0}]}}, 
          ImageSize -> {150, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "8"], " ", 
-                   SubscriptBox["m", "4"], " ", 
-                   SubscriptBox["m", "6"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "7"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "8"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "9"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "8"], " ", 
+                 SubscriptBox["m", "4"], " ", 
+                 SubscriptBox["m", "6"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "7"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "8"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "9"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"4", ",", 
             
@@ -9213,6 +9195,7 @@ TraditionalForm]\\)\""},
           TemplateBox[{"2", "5"}, "Superscript", SyntaxForm -> 
            SuperscriptBox], "}"}], "50", "25", 
         RowBox[{"{", 
+          
           TemplateBox[{"5", "2"}, "Superscript", SyntaxForm -> 
            SuperscriptBox], "}"}], 
         GraphicsBox[{{
@@ -9275,38 +9258,37 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {20., 0}]}}, 
          ImageSize -> {150, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "10"], " ", 
-                   SubsuperscriptBox["m", "5", "2"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "8"], " ", 
-                   SubscriptBox["m", "4"], " ", 
-                   SubscriptBox["m", "6"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "7"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "8"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "9"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "10"], " ", 
+                 SubsuperscriptBox["m", "5", "2"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "8"], " ", 
+                 SubscriptBox["m", "4"], " ", 
+                 SubscriptBox["m", "6"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "7"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "8"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "9"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", 
             
@@ -11834,6 +11816,7 @@ TraditionalForm]\\)\""},
          ImageSize -> {150, 40}], "\"...\"", "\"...\"", "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"8", ",", 
+            
             TemplateBox[{"1", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], "84", "42", 
         RowBox[{"{", 
@@ -12462,13 +12445,12 @@ TraditionalForm]\\)\""},
           RowBox[{"(", 
             RowBox[{"1", "-", 
               SuperscriptBox["t", "2"]}], ")"}], "20"]], 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{"1", "-", 
-             RowBox[{
-               SuperscriptBox["t", "2"], " ", 
-               SubscriptBox["m", "1"], " ", 
-               SubscriptBox["m", "10"]}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{"1", "-", 
+           RowBox[{
+             SuperscriptBox["t", "2"], " ", 
+             SubscriptBox["m", "1"], " ", 
+             SubscriptBox["m", "10"]}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{
             
@@ -12547,21 +12529,20 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {22.5, 0}]}}, 
          ImageSize -> {165, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "9"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "10"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "9"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "10"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", 
             
@@ -12722,27 +12703,26 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {22.5, 0}]}}, 
          ImageSize -> {165, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "8"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "9"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "10"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "8"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "9"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "10"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", "2", ",", 
             
@@ -12990,33 +12970,32 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {22.5, 0}]}}, 
          ImageSize -> {165, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "8"], " ", 
-                   SubscriptBox["m", "4"], " ", 
-                   SubscriptBox["m", "7"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "8"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "9"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "10"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "8"], " ", 
+                 SubscriptBox["m", "4"], " ", 
+                 SubscriptBox["m", "7"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "8"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "9"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "10"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{
             
@@ -13092,39 +13071,38 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {22.5, 0}]}}, 
          ImageSize -> {165, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "10"], " ", 
-                   SubscriptBox["m", "5"], " ", 
-                   SubscriptBox["m", "6"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "8"], " ", 
-                   SubscriptBox["m", "4"], " ", 
-                   SubscriptBox["m", "7"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "8"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "9"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "10"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "10"], " ", 
+                 SubscriptBox["m", "5"], " ", 
+                 SubscriptBox["m", "6"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "8"], " ", 
+                 SubscriptBox["m", "4"], " ", 
+                 SubscriptBox["m", "7"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "8"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "9"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "10"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", 
             
@@ -13474,6 +13452,7 @@ TraditionalForm]\\)\""},
          ImageSize -> {165, 40}], "\"...\"", "\"...\"", "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"5", ",", 
+            
             TemplateBox[{"1", "6"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], "68", "34", 
         RowBox[{"{", 
@@ -17797,13 +17776,12 @@ TraditionalForm]\\)\""},
           RowBox[{"(", 
             RowBox[{"1", "-", 
               SuperscriptBox["t", "2"]}], ")"}], "22"]], 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{"1", "-", 
-             RowBox[{
-               SuperscriptBox["t", "2"], " ", 
-               SubscriptBox["m", "1"], " ", 
-               SubscriptBox["m", "11"]}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{"1", "-", 
+           RowBox[{
+             SuperscriptBox["t", "2"], " ", 
+             SubscriptBox["m", "1"], " ", 
+             SubscriptBox["m", "11"]}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{
             
@@ -17886,21 +17864,20 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {25., 0}]}}, 
          ImageSize -> {180, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "10"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "11"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "10"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "11"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", 
             
@@ -17908,6 +17885,7 @@ TraditionalForm]\\)\""},
              SuperscriptBox]}], "}"}], "42", "21", 
         RowBox[{"{", 
           RowBox[{"10", ",", 
+            
             TemplateBox[{"1", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], 
         GraphicsBox[{{
@@ -18068,27 +18046,26 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {25., 0}]}}, 
          ImageSize -> {180, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "9"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "10"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "11"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "9"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "10"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "11"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", "2", ",", 
             
@@ -18348,33 +18325,32 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {25., 0}]}}, 
          ImageSize -> {180, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "8"], " ", 
-                   SubscriptBox["m", "4"], " ", 
-                   SubscriptBox["m", "8"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "9"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "10"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "11"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "8"], " ", 
+                 SubscriptBox["m", "4"], " ", 
+                 SubscriptBox["m", "8"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "9"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "10"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "11"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{
             
@@ -18457,39 +18433,38 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {25., 0}]}}, 
          ImageSize -> {180, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "10"], " ", 
-                   SubscriptBox["m", "5"], " ", 
-                   SubscriptBox["m", "7"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "8"], " ", 
-                   SubscriptBox["m", "4"], " ", 
-                   SubscriptBox["m", "8"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "9"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "10"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "11"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "10"], " ", 
+                 SubscriptBox["m", "5"], " ", 
+                 SubscriptBox["m", "7"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "8"], " ", 
+                 SubscriptBox["m", "4"], " ", 
+                 SubscriptBox["m", "8"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "9"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "10"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "11"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", 
             
@@ -18585,6 +18560,7 @@ TraditionalForm]\\)\""},
           TemplateBox[{"2", "6"}, "Superscript", SyntaxForm -> 
            SuperscriptBox], "}"}], "72", "36", 
         RowBox[{"{", 
+          
           TemplateBox[{"6", "2"}, "Superscript", SyntaxForm -> 
            SuperscriptBox], "}"}], 
         GraphicsBox[{{
@@ -18655,44 +18631,43 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {25., 0}]}}, 
          ImageSize -> {180, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "12"], " ", 
-                   SubsuperscriptBox["m", "6", "2"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "10"], " ", 
-                   SubscriptBox["m", "5"], " ", 
-                   SubscriptBox["m", "7"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "8"], " ", 
-                   SubscriptBox["m", "4"], " ", 
-                   SubscriptBox["m", "8"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "9"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "10"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "11"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "12"], " ", 
+                 SubsuperscriptBox["m", "6", "2"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "10"], " ", 
+                 SubscriptBox["m", "5"], " ", 
+                 SubscriptBox["m", "7"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "8"], " ", 
+                 SubscriptBox["m", "4"], " ", 
+                 SubscriptBox["m", "8"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "9"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "10"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "11"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{
             
@@ -18789,7 +18764,6 @@ TraditionalForm]\\)\""},
              SuperscriptBox]}], "}"}], "74", "37", 
         RowBox[{"{", 
           RowBox[{"8", ",", "2", ",", 
-            
             TemplateBox[{"1", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], 
         GraphicsBox[{{
@@ -21340,6 +21314,7 @@ TraditionalForm]\\)\""},
             
             TemplateBox[{"4", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
+            
             TemplateBox[{"2", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], 
         GraphicsBox[{{
@@ -21819,6 +21794,7 @@ TraditionalForm]\\)\""},
          ImageSize -> {180, 40}], "\"...\"", "\"...\"", "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"6", ",", 
+            
             TemplateBox[{"2", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
             
@@ -22015,6 +21991,7 @@ TraditionalForm]\\)\""},
             
             TemplateBox[{"3", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
+            
             TemplateBox[{"1", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], 
         GraphicsBox[{{
@@ -22315,7 +22292,6 @@ TraditionalForm]\\)\""},
           RowBox[{"5", ",", "4", ",", "2", ",", "1"}], "}"}], "110", "55", 
         RowBox[{"{", 
           RowBox[{"4", ",", "3", ",", 
-            
             TemplateBox[{"2", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", "1"}], "}"}], 
         GraphicsBox[{{
@@ -23024,6 +23000,7 @@ TraditionalForm]\\)\""},
             
             TemplateBox[{"3", "3"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
+            
             TemplateBox[{"1", "3"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], 
         GraphicsBox[{{
@@ -25531,13 +25508,12 @@ TraditionalForm]\\)\""},
           RowBox[{"(", 
             RowBox[{"1", "-", 
               SuperscriptBox["t", "2"]}], ")"}], "24"]], 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{"1", "-", 
-             RowBox[{
-               SuperscriptBox["t", "2"], " ", 
-               SubscriptBox["m", "1"], " ", 
-               SubscriptBox["m", "12"]}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{"1", "-", 
+           RowBox[{
+             SuperscriptBox["t", "2"], " ", 
+             SubscriptBox["m", "1"], " ", 
+             SubscriptBox["m", "12"]}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{
             
@@ -25624,21 +25600,20 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {27.5, 0}]}}, 
          ImageSize -> {195, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "11"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "12"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "11"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "12"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", 
             
@@ -25815,27 +25790,26 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {27.5, 0}]}}, 
          ImageSize -> {195, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "10"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "11"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "12"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "10"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "11"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "12"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", "2", ",", 
             
@@ -26107,33 +26081,32 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {27.5, 0}]}}, 
          ImageSize -> {195, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "8"], " ", 
-                   SubscriptBox["m", "4"], " ", 
-                   SubscriptBox["m", "9"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "10"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "11"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "12"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "8"], " ", 
+                 SubscriptBox["m", "4"], " ", 
+                 SubscriptBox["m", "9"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "10"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "11"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "12"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", 
             
@@ -26314,39 +26287,38 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {27.5, 0}]}}, 
          ImageSize -> {195, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "10"], " ", 
-                   SubscriptBox["m", "5"], " ", 
-                   SubscriptBox["m", "8"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "8"], " ", 
-                   SubscriptBox["m", "4"], " ", 
-                   SubscriptBox["m", "9"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "10"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "11"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "12"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "10"], " ", 
+                 SubscriptBox["m", "5"], " ", 
+                 SubscriptBox["m", "8"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "8"], " ", 
+                 SubscriptBox["m", "4"], " ", 
+                 SubscriptBox["m", "9"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "10"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "11"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "12"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{
             
@@ -26621,45 +26593,44 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {27.5, 0}]}}, 
          ImageSize -> {195, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "12"], " ", 
-                   SubscriptBox["m", "6"], " ", 
-                   SubscriptBox["m", "7"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "10"], " ", 
-                   SubscriptBox["m", "5"], " ", 
-                   SubscriptBox["m", "8"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "8"], " ", 
-                   SubscriptBox["m", "4"], " ", 
-                   SubscriptBox["m", "9"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "10"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "11"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "12"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "12"], " ", 
+                 SubscriptBox["m", "6"], " ", 
+                 SubscriptBox["m", "7"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "10"], " ", 
+                 SubscriptBox["m", "5"], " ", 
+                 SubscriptBox["m", "8"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "8"], " ", 
+                 SubscriptBox["m", "4"], " ", 
+                 SubscriptBox["m", "9"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "10"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "11"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "12"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"5", ",", 
             
@@ -28514,6 +28485,7 @@ TraditionalForm]\\)\""},
             
             TemplateBox[{"2", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
+            
             TemplateBox[{"1", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], 
         GraphicsBox[{{
@@ -29427,6 +29399,7 @@ TraditionalForm]\\)\""},
             
             TemplateBox[{"5", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
+            
             TemplateBox[{"1", "3"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], 
         GraphicsBox[{{
@@ -30337,6 +30310,7 @@ TraditionalForm]\\)\""},
          ImageSize -> {195, 40}], "\"...\"", "\"...\"", "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"6", ",", "3", ",", 
+            
             TemplateBox[{"1", "4"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], "122", "61", 
         RowBox[{"{", 
@@ -30966,6 +30940,7 @@ TraditionalForm]\\)\""},
              SuperscriptBox], ",", "2"}], "}"}], "126", "63", 
         RowBox[{"{", 
           RowBox[{
+            
             TemplateBox[{"4", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", "3", ",", 
             
@@ -31492,6 +31467,7 @@ TraditionalForm]\\)\""},
              SuperscriptBox]}], "}"}], "128", "64", 
         RowBox[{"{", 
           RowBox[{"5", ",", "3", ",", "2", ",", 
+            
             TemplateBox[{"1", "3"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], 
         GraphicsBox[{{
@@ -31920,6 +31896,7 @@ TraditionalForm]\\)\""},
             
             TemplateBox[{"2", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
+            
             TemplateBox[{"1", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], "130", "65", 
         RowBox[{"{", 
@@ -32237,7 +32214,6 @@ TraditionalForm]\\)\""},
             
             TemplateBox[{"3", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
-            
             TemplateBox[{"1", "3"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], 
         GraphicsBox[{{
@@ -33436,7 +33412,6 @@ TraditionalForm]\\)\""},
             
             TemplateBox[{"3", "3"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
-            
             TemplateBox[{"1", "4"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], 
         GraphicsBox[{{
@@ -33984,6 +33959,7 @@ TraditionalForm]\\)\""},
              SuperscriptBox]}], "}"}], "140", "70", 
         RowBox[{"{", 
           RowBox[{"4", ",", 
+            
             TemplateBox[{"2", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
             
@@ -34894,6 +34870,7 @@ TraditionalForm]\\)\""},
             
             TemplateBox[{"2", "5"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
+            
             TemplateBox[{"1", "3"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], 
         GraphicsBox[{{
@@ -36231,13 +36208,12 @@ TraditionalForm]\\)\""},
           RowBox[{"(", 
             RowBox[{"1", "-", 
               SuperscriptBox["t", "2"]}], ")"}], "26"]], 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{"1", "-", 
-             RowBox[{
-               SuperscriptBox["t", "2"], " ", 
-               SubscriptBox["m", "1"], " ", 
-               SubscriptBox["m", "13"]}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{"1", "-", 
+           RowBox[{
+             SuperscriptBox["t", "2"], " ", 
+             SubscriptBox["m", "1"], " ", 
+             SubscriptBox["m", "13"]}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{
             
@@ -36328,21 +36304,20 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {30., 0}]}}, 
          ImageSize -> {210, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "12"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "13"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "12"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "13"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", 
             
@@ -36527,27 +36502,26 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {30., 0}]}}, 
          ImageSize -> {210, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "11"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "12"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "13"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "11"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "12"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "13"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", "2", ",", 
             
@@ -36650,7 +36624,6 @@ TraditionalForm]\\)\""},
              SuperscriptBox]}], "}"}], "72", "36", 
         RowBox[{"{", 
           RowBox[{"11", ",", 
-            
             TemplateBox[{"1", "3"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], 
         GraphicsBox[{{
@@ -36831,33 +36804,32 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {30., 0}]}}, 
          ImageSize -> {210, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "8"], " ", 
-                   SubscriptBox["m", "4"], " ", 
-                   SubscriptBox["m", "10"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "11"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "12"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "13"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "8"], " ", 
+                 SubscriptBox["m", "4"], " ", 
+                 SubscriptBox["m", "10"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "11"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "12"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "13"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", 
             
@@ -37143,39 +37115,38 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {30., 0}]}}, 
          ImageSize -> {210, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "10"], " ", 
-                   SubscriptBox["m", "5"], " ", 
-                   SubscriptBox["m", "9"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "8"], " ", 
-                   SubscriptBox["m", "4"], " ", 
-                   SubscriptBox["m", "10"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "11"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "12"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "13"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "10"], " ", 
+                 SubscriptBox["m", "5"], " ", 
+                 SubscriptBox["m", "9"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "8"], " ", 
+                 SubscriptBox["m", "4"], " ", 
+                 SubscriptBox["m", "10"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "11"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "12"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "13"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"4", ",", "2", ",", 
             
@@ -37382,6 +37353,7 @@ TraditionalForm]\\)\""},
          ImageSize -> {210, 40}], "\"...\"", "\"...\"", "\"...\""}, {
         RowBox[{"{", 
           RowBox[{
+            
             TemplateBox[{"2", "6"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
             
@@ -37469,45 +37441,44 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {30., 0}]}}, 
          ImageSize -> {210, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "12"], " ", 
-                   SubscriptBox["m", "6"], " ", 
-                   SubscriptBox["m", "8"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "10"], " ", 
-                   SubscriptBox["m", "5"], " ", 
-                   SubscriptBox["m", "9"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "8"], " ", 
-                   SubscriptBox["m", "4"], " ", 
-                   SubscriptBox["m", "10"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "11"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "12"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "13"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "12"], " ", 
+                 SubscriptBox["m", "6"], " ", 
+                 SubscriptBox["m", "8"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "10"], " ", 
+                 SubscriptBox["m", "5"], " ", 
+                 SubscriptBox["m", "9"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "8"], " ", 
+                 SubscriptBox["m", "4"], " ", 
+                 SubscriptBox["m", "10"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "11"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "12"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "13"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           
           TemplateBox[{"2", "7"}, "Superscript", SyntaxForm -> 
@@ -37592,50 +37563,49 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {30., 0}]}}, 
          ImageSize -> {210, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "14"], " ", 
-                   SubsuperscriptBox["m", "7", "2"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "12"], " ", 
-                   SubscriptBox["m", "6"], " ", 
-                   SubscriptBox["m", "8"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "10"], " ", 
-                   SubscriptBox["m", "5"], " ", 
-                   SubscriptBox["m", "9"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "8"], " ", 
-                   SubscriptBox["m", "4"], " ", 
-                   SubscriptBox["m", "10"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "11"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "12"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "13"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "14"], " ", 
+                 SubsuperscriptBox["m", "7", "2"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "12"], " ", 
+                 SubscriptBox["m", "6"], " ", 
+                 SubscriptBox["m", "8"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "10"], " ", 
+                 SubscriptBox["m", "5"], " ", 
+                 SubscriptBox["m", "9"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "8"], " ", 
+                 SubscriptBox["m", "4"], " ", 
+                 SubscriptBox["m", "10"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "11"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "12"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "13"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", 
             
@@ -51282,13 +51252,12 @@ TraditionalForm]\\)\""},
           RowBox[{"(", 
             RowBox[{"1", "-", 
               SuperscriptBox["t", "2"]}], ")"}], "28"]], 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{"1", "-", 
-             RowBox[{
-               SuperscriptBox["t", "2"], " ", 
-               SubscriptBox["m", "1"], " ", 
-               SubscriptBox["m", "14"]}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{"1", "-", 
+           RowBox[{
+             SuperscriptBox["t", "2"], " ", 
+             SubscriptBox["m", "1"], " ", 
+             SubscriptBox["m", "14"]}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{
             
@@ -51383,21 +51352,20 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {32.5, 0}]}}, 
          ImageSize -> {225, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "13"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "14"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "13"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "14"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", 
             
@@ -51498,7 +51466,6 @@ TraditionalForm]\\)\""},
          ImageSize -> {225, 40}], "\"...\"", "\"...\"", "\"...\""}, {
         RowBox[{"{", 
           RowBox[{
-            
             TemplateBox[{"2", "3"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
             
@@ -51590,27 +51557,26 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {32.5, 0}]}}, 
          ImageSize -> {225, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "12"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "13"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "14"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "12"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "13"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "14"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", "2", ",", 
             
@@ -51906,33 +51872,32 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {32.5, 0}]}}, 
          ImageSize -> {225, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "8"], " ", 
-                   SubscriptBox["m", "4"], " ", 
-                   SubscriptBox["m", "11"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "12"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "13"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "14"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "8"], " ", 
+                 SubscriptBox["m", "4"], " ", 
+                 SubscriptBox["m", "11"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "12"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "13"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "14"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", 
             
@@ -52336,39 +52301,38 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {32.5, 0}]}}, 
          ImageSize -> {225, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "10"], " ", 
-                   SubscriptBox["m", "5"], " ", 
-                   SubscriptBox["m", "10"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "8"], " ", 
-                   SubscriptBox["m", "4"], " ", 
-                   SubscriptBox["m", "11"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "12"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "13"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "14"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "10"], " ", 
+                 SubscriptBox["m", "5"], " ", 
+                 SubscriptBox["m", "10"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "8"], " ", 
+                 SubscriptBox["m", "4"], " ", 
+                 SubscriptBox["m", "11"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "12"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "13"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "14"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"5", ",", 
             
@@ -52569,45 +52533,44 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {32.5, 0}]}}, 
          ImageSize -> {225, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "12"], " ", 
-                   SubscriptBox["m", "6"], " ", 
-                   SubscriptBox["m", "9"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "10"], " ", 
-                   SubscriptBox["m", "5"], " ", 
-                   SubscriptBox["m", "10"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "8"], " ", 
-                   SubscriptBox["m", "4"], " ", 
-                   SubscriptBox["m", "11"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "12"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "13"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "14"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "12"], " ", 
+                 SubscriptBox["m", "6"], " ", 
+                 SubscriptBox["m", "9"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "10"], " ", 
+                 SubscriptBox["m", "5"], " ", 
+                 SubscriptBox["m", "10"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "8"], " ", 
+                 SubscriptBox["m", "4"], " ", 
+                 SubscriptBox["m", "11"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "12"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "13"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "14"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", 
             
@@ -52801,51 +52764,50 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {32.5, 0}]}}, 
          ImageSize -> {225, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "14"], " ", 
-                   SubscriptBox["m", "7"], " ", 
-                   SubscriptBox["m", "8"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "12"], " ", 
-                   SubscriptBox["m", "6"], " ", 
-                   SubscriptBox["m", "9"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "10"], " ", 
-                   SubscriptBox["m", "5"], " ", 
-                   SubscriptBox["m", "10"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "8"], " ", 
-                   SubscriptBox["m", "4"], " ", 
-                   SubscriptBox["m", "11"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "12"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "13"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "14"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "14"], " ", 
+                 SubscriptBox["m", "7"], " ", 
+                 SubscriptBox["m", "8"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "12"], " ", 
+                 SubscriptBox["m", "6"], " ", 
+                 SubscriptBox["m", "9"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "10"], " ", 
+                 SubscriptBox["m", "5"], " ", 
+                 SubscriptBox["m", "10"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "8"], " ", 
+                 SubscriptBox["m", "4"], " ", 
+                 SubscriptBox["m", "11"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "12"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "13"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "14"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{
             
@@ -53267,6 +53229,7 @@ TraditionalForm]\\)\""},
          ImageSize -> {225, 40}], "\"...\"", "\"...\"", "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"5", ",", "2", ",", 
+            
             TemplateBox[{"1", "8"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], "118", "59", 
         RowBox[{"{", 
@@ -53376,7 +53339,6 @@ TraditionalForm]\\)\""},
          ImageSize -> {225, 40}], "\"...\"", "\"...\"", "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"6", ",", 
-            
             TemplateBox[{"1", "9"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], "120", "60", 
         RowBox[{"{", 
@@ -53895,6 +53857,7 @@ TraditionalForm]\\)\""},
             
             TemplateBox[{"2", "3"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
+            
             TemplateBox[{"1", "5"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], "126", "63", 
         RowBox[{"{", 
@@ -55190,6 +55153,7 @@ TraditionalForm]\\)\""},
          ImageSize -> {225, 40}], "\"...\"", "\"...\"", "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"4", ",", "3", ",", 
+            
             TemplateBox[{"2", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
             
@@ -55828,7 +55792,6 @@ TraditionalForm]\\)\""},
          ImageSize -> {225, 40}], "\"...\"", "\"...\"", "\"...\""}, {
         RowBox[{"{", 
           RowBox[{
-            
             TemplateBox[{"4", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", "2", ",", 
             
@@ -56592,7 +56555,6 @@ TraditionalForm]\\)\""},
             
             TemplateBox[{"2", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
-            
             TemplateBox[{"1", "5"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], "148", "74", 
         RowBox[{"{", 
@@ -57025,7 +56987,6 @@ TraditionalForm]\\)\""},
             
             TemplateBox[{"2", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
-            
             TemplateBox[{"1", "3"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], 
         GraphicsBox[{{
@@ -59848,6 +59809,7 @@ TraditionalForm]\\)\""},
          ImageSize -> {225, 40}], "\"...\"", "\"...\"", "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"5", ",", "4", ",", 
+            
             TemplateBox[{"2", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
             
@@ -60196,7 +60158,6 @@ TraditionalForm]\\)\""},
              SuperscriptBox], ",", "1"}], "}"}], "166", "83", 
         RowBox[{"{", 
           RowBox[{"5", ",", 
-            
             TemplateBox[{"4", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
             
@@ -61820,7 +61781,6 @@ TraditionalForm]\\)\""},
          ImageSize -> {225, 40}], "\"...\"", "\"...\"", "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"5", ",", "4", ",", 
-            
             TemplateBox[{"3", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], "172", "86", 
         RowBox[{"{", 
@@ -62156,7 +62116,6 @@ TraditionalForm]\\)\""},
          ImageSize -> {225, 40}], "\"...\"", "\"...\"", "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"6", ",", 
-            
             TemplateBox[{"3", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", "2", ",", "1"}], "}"}], "172", "86", 
         RowBox[{"{", 
@@ -62393,7 +62352,6 @@ TraditionalForm]\\)\""},
              SuperscriptBox]}], "}"}], "172", "86", 
         RowBox[{"{", 
           RowBox[{"6", ",", "3", ",", "2", ",", 
-            
             TemplateBox[{"1", "4"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], 
         GraphicsBox[{{
@@ -71843,13 +71801,12 @@ TraditionalForm]\\)\""},
           RowBox[{"(", 
             RowBox[{"1", "-", 
               SuperscriptBox["t", "2"]}], ")"}], "30"]], 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{"1", "-", 
-             RowBox[{
-               SuperscriptBox["t", "2"], " ", 
-               SubscriptBox["m", "1"], " ", 
-               SubscriptBox["m", "15"]}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{"1", "-", 
+           RowBox[{
+             SuperscriptBox["t", "2"], " ", 
+             SubscriptBox["m", "1"], " ", 
+             SubscriptBox["m", "15"]}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{
             
@@ -71948,21 +71905,20 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {35., 0}]}}, 
          ImageSize -> {240, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "14"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "15"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "14"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "15"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", 
             
@@ -72163,27 +72119,26 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {35., 0}]}}, 
          ImageSize -> {240, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "13"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "14"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "15"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "13"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "14"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "15"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", "2", ",", 
             
@@ -72491,33 +72446,32 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {35., 0}]}}, 
          ImageSize -> {240, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "8"], " ", 
-                   SubscriptBox["m", "4"], " ", 
-                   SubscriptBox["m", "12"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "13"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "14"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "15"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "8"], " ", 
+                 SubscriptBox["m", "4"], " ", 
+                 SubscriptBox["m", "12"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "13"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "14"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "15"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", 
             
@@ -73047,39 +73001,38 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {35., 0}]}}, 
          ImageSize -> {240, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "10"], " ", 
-                   SubscriptBox["m", "5"], " ", 
-                   SubscriptBox["m", "11"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "8"], " ", 
-                   SubscriptBox["m", "4"], " ", 
-                   SubscriptBox["m", "12"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "13"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "14"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "15"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "10"], " ", 
+                 SubscriptBox["m", "5"], " ", 
+                 SubscriptBox["m", "11"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "8"], " ", 
+                 SubscriptBox["m", "4"], " ", 
+                 SubscriptBox["m", "12"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "13"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "14"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "15"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"3", ",", 
             
@@ -73284,45 +73237,44 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {35., 0}]}}, 
          ImageSize -> {240, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "12"], " ", 
-                   SubscriptBox["m", "6"], " ", 
-                   SubscriptBox["m", "10"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "10"], " ", 
-                   SubscriptBox["m", "5"], " ", 
-                   SubscriptBox["m", "11"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "8"], " ", 
-                   SubscriptBox["m", "4"], " ", 
-                   SubscriptBox["m", "12"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "13"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "14"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "15"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "12"], " ", 
+                 SubscriptBox["m", "6"], " ", 
+                 SubscriptBox["m", "10"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "10"], " ", 
+                 SubscriptBox["m", "5"], " ", 
+                 SubscriptBox["m", "11"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "8"], " ", 
+                 SubscriptBox["m", "4"], " ", 
+                 SubscriptBox["m", "12"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "13"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "14"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "15"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{
             
@@ -73640,54 +73592,52 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {35., 0}]}}, 
          ImageSize -> {240, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "14"], " ", 
-                   SubscriptBox["m", "7"], " ", 
-                   SubscriptBox["m", "9"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "12"], " ", 
-                   SubscriptBox["m", "6"], " ", 
-                   SubscriptBox["m", "10"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "10"], " ", 
-                   SubscriptBox["m", "5"], " ", 
-                   SubscriptBox["m", "11"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "8"], " ", 
-                   SubscriptBox["m", "4"], " ", 
-                   SubscriptBox["m", "12"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "13"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "14"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "15"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "14"], " ", 
+                 SubscriptBox["m", "7"], " ", 
+                 SubscriptBox["m", "9"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "12"], " ", 
+                 SubscriptBox["m", "6"], " ", 
+                 SubscriptBox["m", "10"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "10"], " ", 
+                 SubscriptBox["m", "5"], " ", 
+                 SubscriptBox["m", "11"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "8"], " ", 
+                 SubscriptBox["m", "4"], " ", 
+                 SubscriptBox["m", "12"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "13"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "14"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "15"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"4", ",", "3", ",", 
-            
             TemplateBox[{"1", "9"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], "126", "63", 
         RowBox[{"{", 
@@ -73887,56 +73837,55 @@ TraditionalForm]\\)\""},
            InsetBox[
             FormBox["1", TraditionalForm], {35., 0}]}}, 
          ImageSize -> {240, 40}], "\"...\"", 
-        RowBox[{"{", 
-          FractionBox["1", 
-           RowBox[{
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "16"], " ", 
-                   SubsuperscriptBox["m", "8", "2"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "14"], " ", 
-                   SubscriptBox["m", "7"], " ", 
-                   SubscriptBox["m", "9"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "12"], " ", 
-                   SubscriptBox["m", "6"], " ", 
-                   SubscriptBox["m", "10"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "10"], " ", 
-                   SubscriptBox["m", "5"], " ", 
-                   SubscriptBox["m", "11"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "8"], " ", 
-                   SubscriptBox["m", "4"], " ", 
-                   SubscriptBox["m", "12"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "6"], " ", 
-                   SubscriptBox["m", "3"], " ", 
-                   SubscriptBox["m", "13"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "4"], " ", 
-                   SubscriptBox["m", "2"], " ", 
-                   SubscriptBox["m", "14"]}]}], ")"}], " ", 
-             RowBox[{"(", 
-               RowBox[{"1", "-", 
-                 RowBox[{
-                   SuperscriptBox["t", "2"], " ", 
-                   SubscriptBox["m", "1"], " ", 
-                   SubscriptBox["m", "15"]}]}], ")"}]}]], "}"}], "\"...\""}, {
+        FractionBox["1", 
+         RowBox[{
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "16"], " ", 
+                 SubsuperscriptBox["m", "8", "2"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "14"], " ", 
+                 SubscriptBox["m", "7"], " ", 
+                 SubscriptBox["m", "9"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "12"], " ", 
+                 SubscriptBox["m", "6"], " ", 
+                 SubscriptBox["m", "10"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "10"], " ", 
+                 SubscriptBox["m", "5"], " ", 
+                 SubscriptBox["m", "11"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "8"], " ", 
+                 SubscriptBox["m", "4"], " ", 
+                 SubscriptBox["m", "12"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "6"], " ", 
+                 SubscriptBox["m", "3"], " ", 
+                 SubscriptBox["m", "13"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "4"], " ", 
+                 SubscriptBox["m", "2"], " ", 
+                 SubscriptBox["m", "14"]}]}], ")"}], " ", 
+           RowBox[{"(", 
+             RowBox[{"1", "-", 
+               RowBox[{
+                 SuperscriptBox["t", "2"], " ", 
+                 SubscriptBox["m", "1"], " ", 
+                 SubscriptBox["m", "15"]}]}], ")"}]}]], "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"5", ",", "2", ",", 
             
@@ -74056,6 +74005,7 @@ TraditionalForm]\\)\""},
             
             TemplateBox[{"2", "4"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
+            
             TemplateBox[{"1", "5"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], "130", "65", 
         RowBox[{"{", 
@@ -75031,7 +74981,6 @@ TraditionalForm]\\)\""},
             
             TemplateBox[{"2", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
-            
             TemplateBox[{"1", "7"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], "144", "72", 
         RowBox[{"{", 
@@ -75254,6 +75203,7 @@ TraditionalForm]\\)\""},
          ImageSize -> {240, 40}], "\"...\"", "\"...\"", "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"5", ",", "3", ",", 
+            
             TemplateBox[{"1", "8"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], "146", "73", 
         RowBox[{"{", 
@@ -75942,7 +75892,6 @@ TraditionalForm]\\)\""},
              SuperscriptBox]}], "}"}], "154", "77", 
         RowBox[{"{", 
           RowBox[{
-            
             TemplateBox[{"7", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", "2"}], "}"}], 
         GraphicsBox[{{
@@ -77275,6 +77224,7 @@ TraditionalForm]\\)\""},
              SuperscriptBox]}], "}"}], "162", "81", 
         RowBox[{"{", 
           RowBox[{"9", ",", 
+            
             TemplateBox[{"2", "3"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", "1"}], "}"}], 
         GraphicsBox[{{
@@ -77621,7 +77571,6 @@ TraditionalForm]\\)\""},
          ImageSize -> {240, 40}], "\"...\"", "\"...\"", "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"6", ",", "3", ",", 
-            
             TemplateBox[{"1", "7"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], "164", "82", 
         RowBox[{"{", 
@@ -79349,7 +79298,6 @@ TraditionalForm]\\)\""},
             
             TemplateBox[{"3", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
-            
             TemplateBox[{"2", "3"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], "174", "87", 
         RowBox[{"{", 
@@ -79688,7 +79636,6 @@ TraditionalForm]\\)\""},
          ImageSize -> {240, 40}], "\"...\"", "\"...\"", "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"5", ",", "4", ",", "2", ",", 
-            
             TemplateBox[{"1", "5"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], "174", "87", 
         RowBox[{"{", 
@@ -79921,6 +79868,7 @@ TraditionalForm]\\)\""},
             
             TemplateBox[{"2", "3"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
+            
             TemplateBox[{"1", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], "176", "88", 
         RowBox[{"{", 
@@ -80736,7 +80684,6 @@ TraditionalForm]\\)\""},
          ImageSize -> {240, 40}], "\"...\"", "\"...\"", "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"6", ",", "4", ",", 
-            
             TemplateBox[{"1", "6"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], "178", "89", 
         RowBox[{"{", 
@@ -83232,7 +83179,6 @@ TraditionalForm]\\)\""},
          ImageSize -> {240, 40}], "\"...\"", "\"...\"", "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"7", ",", 
-            
             TemplateBox[{"2", "3"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
             
@@ -84185,6 +84131,7 @@ TraditionalForm]\\)\""},
              SuperscriptBox], ",", "1"}], "}"}], "190", "95", 
         RowBox[{"{", 
           RowBox[{"6", ",", "5", ",", 
+            
             TemplateBox[{"1", "5"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], 
         GraphicsBox[{{
@@ -85382,6 +85329,7 @@ TraditionalForm]\\)\""},
             
             TemplateBox[{"5", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", 
+            
             TemplateBox[{"2", "3"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], "194", "97", 
         RowBox[{"{", 
@@ -85866,6 +85814,7 @@ TraditionalForm]\\)\""},
          ImageSize -> {240, 40}], "\"...\"", "\"...\"", "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"8", ",", "3", ",", 
+            
             TemplateBox[{"1", "5"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], "194", "97", 
         RowBox[{"{", 
@@ -86490,7 +86439,6 @@ TraditionalForm]\\)\""},
              SuperscriptBox]}], "}"}], "196", "98", 
         RowBox[{"{", 
           RowBox[{"6", ",", "4", ",", "2", ",", 
-            
             TemplateBox[{"1", "4"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], 
         GraphicsBox[{{
@@ -87104,6 +87052,7 @@ TraditionalForm]\\)\""},
             
             TemplateBox[{"5", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", "2", ",", 
+            
             TemplateBox[{"1", "4"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], 
         GraphicsBox[{{
@@ -89070,7 +89019,6 @@ TraditionalForm]\\)\""},
          ImageSize -> {240, 40}], "\"...\"", "\"...\"", "\"...\""}, {
         RowBox[{"{", 
           RowBox[{"8", ",", "3", ",", "2", ",", 
-            
             TemplateBox[{"1", "3"}, "Superscript", SyntaxForm -> 
              SuperscriptBox]}], "}"}], "202", "101", 
         RowBox[{"{", 
@@ -90073,7 +90021,6 @@ TraditionalForm]\\)\""},
           RowBox[{"6", ",", "5", ",", "3", ",", "2"}], "}"}], "206", "103", 
         RowBox[{"{", 
           RowBox[{
-            
             TemplateBox[{"4", "2"}, "Superscript", SyntaxForm -> 
              SuperscriptBox], ",", "3", ",", 
             
@@ -99887,7 +99834,7 @@ TraditionalForm]\\)\""},
      GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
       BaselinePosition -> {2, 1}]& ),
    InterpretationFunction->(RowBox[{"Labeled", "[", 
-      RowBox[{#, ",", #2, ",", "Top"}], "]"}]& )]}}, 1]], "Output",
+      RowBox[{#, ",", #2, ",", "Top"}], "]"}]& )]}}, 7]], "Output",
  CellChangeTimes->{{3.671267832620016*^9, 3.671267849926169*^9}, {
    3.671268124717548*^9, 3.671268139429716*^9}, 3.6712681988703423`*^9, {
    3.671268258747452*^9, 3.671268271041678*^9}, {3.6712683402585278`*^9, 
@@ -99911,7 +99858,9 @@ TraditionalForm]\\)\""},
    3.6719560096016912`*^9, 3.671956085108741*^9, 3.6719862370420713`*^9, 
    3.671986317533229*^9, 3.6719863569212513`*^9, {3.6719864278694677`*^9, 
    3.671986457603441*^9}, 3.671986549778833*^9, 3.6719866187744703`*^9, 
-   3.671986676000155*^9, 3.671986818758572*^9}]
+   3.671986676000155*^9, 3.671986818758572*^9, 3.672044388530637*^9, {
+   3.672044952412426*^9, 3.67204496984155*^9}, {3.672045017932345*^9, 
+   3.672045048298295*^9}}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -99940,23 +99889,23 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 52589, 1129, 1967, "Input"],
-Cell[53150, 1151, 999, 18, 24, "Input"],
-Cell[54152, 1171, 94, 1, 24, "Input"],
-Cell[54249, 1174, 92, 1, 24, "Input"],
-Cell[54344, 1177, 92, 1, 24, "Input"],
-Cell[54439, 1180, 90, 1, 24, "Input"],
-Cell[54532, 1183, 92, 1, 24, "Input"],
-Cell[54627, 1186, 143, 2, 24, "Input"],
-Cell[54773, 1190, 143, 2, 24, "Input"],
-Cell[54919, 1194, 223, 4, 24, "Input"],
+Cell[558, 20, 52640, 1130, 1967, "Input"],
+Cell[53201, 1152, 1050, 19, 24, "Input"],
+Cell[54254, 1173, 94, 1, 24, "Input"],
+Cell[54351, 1176, 92, 1, 24, "Input"],
+Cell[54446, 1179, 92, 1, 24, "Input"],
+Cell[54541, 1182, 90, 1, 24, "Input"],
+Cell[54634, 1185, 92, 1, 24, "Input"],
+Cell[54729, 1188, 143, 2, 24, "Input"],
+Cell[54875, 1192, 143, 2, 24, "Input"],
+Cell[55021, 1196, 223, 4, 24, "Input"],
 Cell[CellGroupData[{
-Cell[55167, 1202, 1512, 25, 42, "Input"],
-Cell[56682, 1229, 3826250, 98684, 8983, "Output"]
+Cell[55269, 1204, 1616, 27, 42, "Input"],
+Cell[56888, 1233, 3821966, 98629, 8983, "Output"]
 }, Open  ]],
-Cell[3882947, 99916, 92, 1, 24, "Input"],
-Cell[3883042, 99919, 69, 1, 24, "Input"],
-Cell[3883114, 99922, 94, 1, 24, "Input"]
+Cell[3878869, 99865, 92, 1, 24, "Input"],
+Cell[3878964, 99868, 69, 1, 24, "Input"],
+Cell[3879036, 99871, 94, 1, 24, "Input"]
 }
 ]
 *)
