@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[   3896585,     100293]
-NotebookOptionsPosition[   3895635,     100260]
-NotebookOutlinePosition[   3895994,     100276]
-CellTagsIndexPosition[   3895951,     100273]
+NotebookDataLength[   3884081,      99955]
+NotebookOptionsPosition[   3883212,      99925]
+NotebookOutlinePosition[   3883571,      99941]
+CellTagsIndexPosition[   3883528,      99938]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1149,363 +1149,25 @@ Cell[BoxData[{
    3.6719552968138437`*^9, 3.67195532314699*^9}, {3.671955835005748*^9, 
    3.671955908679532*^9}, {3.6719559844401693`*^9, 3.6719559949474983`*^9}}],
 
-Cell[CellGroupData[{
-
 Cell[BoxData[
- RowBox[{"Aseries", "[", "3", "]"}]], "Input",
+ RowBox[{" ", 
+  RowBox[{
+   RowBox[{"Export", "[", 
+    RowBox[{"\"\<A15.gif\>\"", ",", 
+     RowBox[{"Aseries", "[", "10", "]"}], ",", 
+     RowBox[{"ImageSize", " ", "\[Rule]", " ", "1366"}]}], "]"}], 
+   ";"}]}]], "Input",
  CellChangeTimes->{
   3.66842144069928*^9, 3.6690079447202916`*^9, {3.6690080789013777`*^9, 
    3.669008098442378*^9}, {3.6690104645876503`*^9, 3.6690104658126736`*^9}, 
    3.6697166045497026`*^9, 3.6706437764187646`*^9, {3.671167840845508*^9, 
    3.67116784098015*^9}, {3.671167874874872*^9, 3.671167874987269*^9}, {
    3.6712677578034163`*^9, 3.671267757968919*^9}, {3.671267817860656*^9, 
-   3.6712678182061663`*^9}, {3.671955700982374*^9, 3.67195570107415*^9}}],
-
-Cell[BoxData[
- TemplateBox[{TagBox[
-    GridBox[{{
-      "\"Orbit\"", "\"dim(O)\"", 
-       "\"dim(\\!\\(\\*SubscriptBox[\\(\[ScriptCapitalM]\\), \\(H\\)]\\))\"", 
-       "\"\\!\\(\\*SuperscriptBox[\\(d\\), \\(t\\)]\\)\"", 
-       "\"\\!\\(\\*SubscriptBox[\\(\[CapitalGamma]\\), \\(1\\)]\\)\"", 
-       "\"\\!\\(\\*SubscriptBox[\\(\[CapitalGamma]\\), \\(2\\)]\\)\"", 
-       "\"Higgs HS\"", "\"Character HWG\"", "\"mHL HWG\""}, {
-       RowBox[{"{", 
-         TemplateBox[{"1", "4"}, "Superscript", SyntaxForm -> SuperscriptBox],
-          "}"}], "0", "0", 
-       RowBox[{"{", "4", "}"}], 
-       GraphicsBox[{{
-          EdgeForm[{
-            Thickness[Tiny], 
-            RGBColor[0, 0, 1]}], 
-          GrayLevel[1], 
-          RectangleBox[{1.5, 4.}, {3.5, 1.5}]}, Null, {
-          RGBColor[1, 0, 0], {}}, {}, {}, 
-         InsetBox[
-          FormBox["4", TraditionalForm], {2.5, 3.}]}, ImageSize -> {60, 40}], 
-       GraphicsBox[{{
-          RGBColor[1, 0, 0], {
-           CircleBox[{0., 0}, 1], 
-           CircleBox[{2.5, 0}, 1], 
-           CircleBox[{5., 0}, 1]}}, {
-          InsetBox[
-           FormBox["\"0\"", TraditionalForm], {0., 0}], 
-          InsetBox[
-           FormBox["\"0\"", TraditionalForm], {2.5, 0}], 
-          InsetBox[
-           FormBox["\"0\"", TraditionalForm], {5., 0}]}, {
-          LineBox[{{1., 0}, {1.5, 0}}], 
-          LineBox[{{3.5, 0}, {4., 0}}]}}, ImageSize -> {60, 40}], "1", "1", 
-       "\"...\""}, {
-       RowBox[{"{", 
-         RowBox[{"2", ",", 
-           
-           TemplateBox[{"1", "2"}, "Superscript", SyntaxForm -> 
-            SuperscriptBox]}], "}"}], "6", "3", 
-       RowBox[{"{", 
-         RowBox[{"3", ",", "1"}], "}"}], 
-       GraphicsBox[{{
-          EdgeForm[{
-            Thickness[Tiny], 
-            RGBColor[0, 0, 1]}], 
-          GrayLevel[1], 
-          RectangleBox[{1.5, 4.}, {3.5, 1.5}]}, 
-         LineBox[{{2.5, 1.}, {2.5, 1.5}}], {
-          RGBColor[1, 0, 0], {
-           CircleBox[{2.5, 0}, 1]}}, {}, {
-          InsetBox[
-           FormBox["1", TraditionalForm], {2.5, 0}]}, 
-         InsetBox[
-          FormBox["4", TraditionalForm], {2.5, 3.}]}, ImageSize -> {60, 40}], 
-       GraphicsBox[{{
-          RGBColor[1, 0, 0], {
-           CircleBox[{0., 0}, 1], 
-           CircleBox[{2.5, 0}, 1], 
-           CircleBox[{5., 0}, 1]}}, {
-          EdgeForm[{
-            Thickness[Tiny], 
-            RGBColor[0, 0, 1]}], 
-          GrayLevel[1], {
-           RectangleBox[{-1., 1.5}, {1., 3.5}], 
-           RectangleBox[{4., 1.5}, {6., 3.5}]}}, Null, {
-          LineBox[{{0., 1}, {0., 1.5}}], 
-          LineBox[{{5., 1}, {5., 1.5}}]}, {
-          LineBox[{{1., 0}, {1.5, 0}}], 
-          LineBox[{{3.5, 0}, {4., 0}}]}, {
-          InsetBox[
-           FormBox["1", TraditionalForm], {0., 2.5}], 
-          InsetBox[
-           FormBox["1", TraditionalForm], {5., 2.5}]}, {
-          InsetBox[
-           FormBox["1", TraditionalForm], {0., 0}], 
-          InsetBox[
-           FormBox["1", TraditionalForm], {2.5, 0}], 
-          InsetBox[
-           FormBox["1", TraditionalForm], {5., 0}]}}, ImageSize -> {60, 40}], 
-       FractionBox[
-        RowBox[{"1", "+", 
-          RowBox[{"9", " ", 
-            SuperscriptBox["t", "2"]}], "+", 
-          RowBox[{"9", " ", 
-            SuperscriptBox["t", "4"]}], "+", 
-          SuperscriptBox["t", "6"]}], 
-        SuperscriptBox[
-         RowBox[{"(", 
-           RowBox[{"1", "-", 
-             SuperscriptBox["t", "2"]}], ")"}], "6"]], 
-       RowBox[{"{", 
-         FractionBox["1", 
-          RowBox[{"1", "-", 
-            RowBox[{
-              SuperscriptBox["t", "2"], " ", 
-              SubscriptBox["m", "1"], " ", 
-              SubscriptBox["m", "3"]}]}]], "}"}], "\"...\""}, {
-       RowBox[{"{", 
-         TemplateBox[{"2", "2"}, "Superscript", SyntaxForm -> SuperscriptBox],
-          "}"}], "8", "4", 
-       RowBox[{"{", 
-         TemplateBox[{"2", "2"}, "Superscript", SyntaxForm -> SuperscriptBox],
-          "}"}], 
-       GraphicsBox[{{
-          EdgeForm[{
-            Thickness[Tiny], 
-            RGBColor[0, 0, 1]}], 
-          GrayLevel[1], 
-          RectangleBox[{1.5, 4.}, {3.5, 1.5}]}, 
-         LineBox[{{2.5, 1.}, {2.5, 1.5}}], {
-          RGBColor[1, 0, 0], {
-           CircleBox[{2.5, 0}, 1]}}, {}, {
-          InsetBox[
-           FormBox["2", TraditionalForm], {2.5, 0}]}, 
-         InsetBox[
-          FormBox["4", TraditionalForm], {2.5, 3.}]}, ImageSize -> {60, 40}], 
-       GraphicsBox[{{
-          RGBColor[1, 0, 0], {
-           CircleBox[{0., 0}, 1], 
-           CircleBox[{2.5, 0}, 1], 
-           CircleBox[{5., 0}, 1]}}, {
-          EdgeForm[{
-            Thickness[Tiny], 
-            RGBColor[0, 0, 1]}], 
-          GrayLevel[1], {
-           RectangleBox[{1.5, 1.5}, {3.5, 3.5}]}}, Null, {
-          LineBox[{{2.5, 1}, {2.5, 1.5}}]}, {
-          LineBox[{{1., 0}, {1.5, 0}}], 
-          LineBox[{{3.5, 0}, {4., 0}}]}, {
-          InsetBox[
-           FormBox["2", TraditionalForm], {2.5, 2.5}]}, {
-          InsetBox[
-           FormBox["1", TraditionalForm], {0., 0}], 
-          InsetBox[
-           FormBox["2", TraditionalForm], {2.5, 0}], 
-          InsetBox[
-           FormBox["1", TraditionalForm], {5., 0}]}}, ImageSize -> {60, 40}], 
-       "\"...\"", 
-       RowBox[{"{", 
-         FractionBox["1", 
-          RowBox[{
-            RowBox[{"(", 
-              RowBox[{"1", "-", 
-                RowBox[{
-                  SuperscriptBox["t", "4"], " ", 
-                  SubsuperscriptBox["m", "2", "2"]}]}], ")"}], " ", 
-            RowBox[{"(", 
-              RowBox[{"1", "-", 
-                RowBox[{
-                  SuperscriptBox["t", "2"], " ", 
-                  SubscriptBox["m", "1"], " ", 
-                  SubscriptBox["m", "3"]}]}], ")"}]}]], "}"}], 
-       RowBox[{"1", "+", 
-         RowBox[{
-           SuperscriptBox["t", "6"], " ", 
-           SubsuperscriptBox["h", "2", "2"]}], "-", 
-         RowBox[{
-           SuperscriptBox["t", "4"], " ", 
-           SubscriptBox["h", "1"], " ", 
-           SubscriptBox["h", "3"]}], "-", 
-         RowBox[{
-           SuperscriptBox["t", "6"], " ", 
-           SubscriptBox["h", "1"], " ", 
-           SubscriptBox["h", "3"]}]}]}, {
-       RowBox[{"{", 
-         RowBox[{"3", ",", "1"}], "}"}], "10", "5", 
-       RowBox[{"{", 
-         RowBox[{"2", ",", 
-           
-           TemplateBox[{"1", "2"}, "Superscript", SyntaxForm -> 
-            SuperscriptBox]}], "}"}], 
-       GraphicsBox[{{
-          EdgeForm[{
-            Thickness[Tiny], 
-            RGBColor[0, 0, 1]}], 
-          GrayLevel[1], 
-          RectangleBox[{1.5, 4.}, {3.5, 1.5}]}, 
-         LineBox[{{2.5, 1.}, {2.5, 1.5}}], {
-          RGBColor[1, 0, 0], {
-           CircleBox[{2.5, 0}, 1], 
-           CircleBox[{5., 0}, 1]}}, {
-          LineBox[{{3.5, 0}, {4., 0}}]}, {
-          InsetBox[
-           FormBox["2", TraditionalForm], {2.5, 0}], 
-          InsetBox[
-           FormBox["1", TraditionalForm], {5., 0}]}, 
-         InsetBox[
-          FormBox["4", TraditionalForm], {2.5, 3.}]}, ImageSize -> {60, 40}], 
-       GraphicsBox[{{
-          RGBColor[1, 0, 0], {
-           CircleBox[{0., 0}, 1], 
-           CircleBox[{2.5, 0}, 1], 
-           CircleBox[{5., 0}, 1]}}, {
-          EdgeForm[{
-            Thickness[Tiny], 
-            RGBColor[0, 0, 1]}], 
-          GrayLevel[1], {
-           RectangleBox[{1.5, 1.5}, {3.5, 3.5}], 
-           RectangleBox[{4., 1.5}, {6., 3.5}]}}, Null, {
-          LineBox[{{2.5, 1}, {2.5, 1.5}}], 
-          LineBox[{{5., 1}, {5., 1.5}}]}, {
-          LineBox[{{1., 0}, {1.5, 0}}], 
-          LineBox[{{3.5, 0}, {4., 0}}]}, {
-          InsetBox[
-           FormBox["1", TraditionalForm], {2.5, 2.5}], 
-          InsetBox[
-           FormBox["2", TraditionalForm], {5., 2.5}]}, {
-          InsetBox[
-           FormBox["1", TraditionalForm], {0., 0}], 
-          InsetBox[
-           FormBox["2", TraditionalForm], {2.5, 0}], 
-          InsetBox[
-           FormBox["2", TraditionalForm], {5., 0}]}}, ImageSize -> {60, 40}], 
-       "\"...\"", 
-       FractionBox[
-        RowBox[{"1", "-", 
-          RowBox[{
-            SuperscriptBox["t", "12"], " ", 
-            SubsuperscriptBox["m", "1", "2"], " ", 
-            SubsuperscriptBox["m", "2", "2"], " ", 
-            SubsuperscriptBox["m", "3", "2"]}]}], 
-        RowBox[{
-          RowBox[{"(", 
-            RowBox[{"1", "-", 
-              RowBox[{
-                SuperscriptBox["t", "6"], " ", 
-                SubsuperscriptBox["m", "1", "2"], " ", 
-                SubscriptBox["m", "2"]}]}], ")"}], " ", 
-          RowBox[{"(", 
-            RowBox[{"1", "-", 
-              RowBox[{
-                SuperscriptBox["t", "4"], " ", 
-                SubsuperscriptBox["m", "2", "2"]}]}], ")"}], " ", 
-          RowBox[{"(", 
-            RowBox[{"1", "-", 
-              RowBox[{
-                SuperscriptBox["t", "2"], " ", 
-                SubscriptBox["m", "1"], " ", 
-                SubscriptBox["m", "3"]}]}], ")"}], " ", 
-          RowBox[{"(", 
-            RowBox[{"1", "-", 
-              RowBox[{
-                SuperscriptBox["t", "4"], " ", 
-                SubscriptBox["m", "1"], " ", 
-                SubscriptBox["m", "3"]}]}], ")"}], " ", 
-          RowBox[{"(", 
-            RowBox[{"1", "-", 
-              RowBox[{
-                SuperscriptBox["t", "6"], " ", 
-                SubscriptBox["m", "2"], " ", 
-                SubsuperscriptBox["m", "3", "2"]}]}], ")"}]}]], 
-       RowBox[{"1", "-", 
-         RowBox[{
-           SuperscriptBox["t", "6"], " ", 
-           SubscriptBox["h", "1"], " ", 
-           SubscriptBox["h", "3"]}]}]}, {
-       RowBox[{"{", "4", "}"}], "12", "6", 
-       RowBox[{"{", 
-         TemplateBox[{"1", "4"}, "Superscript", SyntaxForm -> SuperscriptBox],
-          "}"}], 
-       GraphicsBox[{{
-          EdgeForm[{
-            Thickness[Tiny], 
-            RGBColor[0, 0, 1]}], 
-          GrayLevel[1], 
-          RectangleBox[{1.5, 4.}, {3.5, 1.5}]}, 
-         LineBox[{{2.5, 1.}, {2.5, 1.5}}], {
-          RGBColor[1, 0, 0], {
-           CircleBox[{2.5, 0}, 1], 
-           CircleBox[{5., 0}, 1], 
-           CircleBox[{7.5, 0}, 1]}}, {
-          LineBox[{{3.5, 0}, {4., 0}}], 
-          LineBox[{{6., 0}, {6.5, 0}}]}, {
-          InsetBox[
-           FormBox["3", TraditionalForm], {2.5, 0}], 
-          InsetBox[
-           FormBox["2", TraditionalForm], {5., 0}], 
-          InsetBox[
-           FormBox["1", TraditionalForm], {7.5, 0}]}, 
-         InsetBox[
-          FormBox["4", TraditionalForm], {2.5, 3.}]}, ImageSize -> {60, 40}], 
-       GraphicsBox[{{
-          RGBColor[1, 0, 0], {
-           CircleBox[{0., 0}, 1], 
-           CircleBox[{2.5, 0}, 1], 
-           CircleBox[{5., 0}, 1]}}, {
-          EdgeForm[{
-            Thickness[Tiny], 
-            RGBColor[0, 0, 1]}], 
-          GrayLevel[1], {
-           RectangleBox[{4., 1.5}, {6., 3.5}]}}, Null, {
-          LineBox[{{5., 1}, {5., 1.5}}]}, {
-          LineBox[{{1., 0}, {1.5, 0}}], 
-          LineBox[{{3.5, 0}, {4., 0}}]}, {
-          InsetBox[
-           FormBox["4", TraditionalForm], {5., 2.5}]}, {
-          InsetBox[
-           FormBox["1", TraditionalForm], {0., 0}], 
-          InsetBox[
-           FormBox["2", TraditionalForm], {2.5, 0}], 
-          InsetBox[
-           FormBox["3", TraditionalForm], {5., 0}]}}, ImageSize -> {60, 40}], 
-       FractionBox[
-        RowBox[{
-          RowBox[{"(", 
-            RowBox[{"1", "-", 
-              SuperscriptBox["t", "4"]}], ")"}], " ", 
-          RowBox[{"(", 
-            RowBox[{"1", "-", 
-              SuperscriptBox["t", "6"]}], ")"}], " ", 
-          RowBox[{"(", 
-            RowBox[{"1", "-", 
-              SuperscriptBox["t", "8"]}], ")"}]}], 
-        SuperscriptBox[
-         RowBox[{"(", 
-           RowBox[{"1", "-", 
-             SuperscriptBox["t", "2"]}], ")"}], "15"]], "\"...\"", "1"}}, 
-     GridBoxAlignment -> {"Columns" -> {{Left}}}, AutoDelete -> False, 
-     GridBoxBackground -> {"Columns" -> {{None}}, "Rows" -> {
-         RGBColor[1, 1, 0.85]}}, 
-     GridBoxFrame -> {"Columns" -> {{True}}, "Rows" -> {{True}}}, 
-     GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{2}}}], 
-    "Grid"],"\"Moduli Space Quivers for Nilpotent Orbits of \
-\\!\\(\\*FormBox[SubscriptBox[\\\"\\\\\\\"A\\\\\\\"\\\", \\\"3\\\"], \
-TraditionalForm]\\)\""},
-  "Labeled",
-  DisplayFunction->(GridBox[{{
-      ItemBox[#2, DefaultBaseStyle -> "LabeledLabel"]}, {
-      TagBox[
-       ItemBox[
-        PaneBox[
-         TagBox[#, "SkipImageSizeLevel"], Alignment -> {Center, Baseline}, 
-         BaselinePosition -> Baseline], DefaultBaseStyle -> "Labeled"], 
-       "SkipImageSizeLevel"]}}, 
-    GridBoxAlignment -> {"Columns" -> {{Center}}, "Rows" -> {{Center}}}, 
-    AutoDelete -> False, 
-    GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
-    BaselinePosition -> {2, 1}]& ),
-  InterpretationFunction->(RowBox[{"Labeled", "[", 
-     RowBox[{#, ",", #2, ",", "Top"}], "]"}]& )]], "Output",
- CellChangeTimes->{3.671955784434596*^9, 3.6719558470326157`*^9, 
-  3.671955996776456*^9, 3.671956075229924*^9}]
-}, Open  ]],
+   3.6712678182061663`*^9}, {3.671955700982374*^9, 3.67195570107415*^9}, {
+   3.671986247282494*^9, 3.671986303318632*^9}, {3.67198634358291*^9, 
+   3.671986344572627*^9}, {3.671986415037467*^9, 3.6719864165989017`*^9}, {
+   3.671986534753357*^9, 3.671986537451136*^9}, {3.671986603866723*^9, 
+   3.671986604554966*^9}, {3.671986801655603*^9, 3.671986802188452*^9}}],
 
 Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.671955735906995*^9, 3.6719557366986933`*^9}}],
@@ -100246,7 +99908,10 @@ TraditionalForm]\\)\""},
    3.671878951638151*^9}, 3.671879053531619*^9, 3.671879164495883*^9, {
    3.671955338126896*^9, 3.671955351108666*^9}, 3.6719555469295692`*^9, 
    3.671955716525556*^9, 3.671955797554476*^9, 3.671955856671722*^9, 
-   3.6719560096016912`*^9, 3.671956085108741*^9}]
+   3.6719560096016912`*^9, 3.671956085108741*^9, 3.6719862370420713`*^9, 
+   3.671986317533229*^9, 3.6719863569212513`*^9, {3.6719864278694677`*^9, 
+   3.671986457603441*^9}, 3.671986549778833*^9, 3.6719866187744703`*^9, 
+   3.671986676000155*^9, 3.671986818758572*^9}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -100276,25 +99941,22 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[558, 20, 52589, 1129, 1967, "Input"],
+Cell[53150, 1151, 999, 18, 24, "Input"],
+Cell[54152, 1171, 94, 1, 24, "Input"],
+Cell[54249, 1174, 92, 1, 24, "Input"],
+Cell[54344, 1177, 92, 1, 24, "Input"],
+Cell[54439, 1180, 90, 1, 24, "Input"],
+Cell[54532, 1183, 92, 1, 24, "Input"],
+Cell[54627, 1186, 143, 2, 24, "Input"],
+Cell[54773, 1190, 143, 2, 24, "Input"],
+Cell[54919, 1194, 223, 4, 24, "Input"],
 Cell[CellGroupData[{
-Cell[53172, 1153, 526, 8, 24, "Input"],
-Cell[53701, 1163, 13079, 343, 242, "Output"]
+Cell[55167, 1202, 1512, 25, 42, "Input"],
+Cell[56682, 1229, 3826250, 98684, 8983, "Output"]
 }, Open  ]],
-Cell[66795, 1509, 94, 1, 24, "Input"],
-Cell[66892, 1512, 92, 1, 24, "Input"],
-Cell[66987, 1515, 92, 1, 24, "Input"],
-Cell[67082, 1518, 90, 1, 24, "Input"],
-Cell[67175, 1521, 92, 1, 24, "Input"],
-Cell[67270, 1524, 143, 2, 24, "Input"],
-Cell[67416, 1528, 143, 2, 24, "Input"],
-Cell[67562, 1532, 223, 4, 24, "Input"],
-Cell[CellGroupData[{
-Cell[67810, 1540, 1512, 25, 42, "Input"],
-Cell[69325, 1567, 3826030, 98681, 8983, "Output"]
-}, Open  ]],
-Cell[3895370, 100251, 92, 1, 18, "Input"],
-Cell[3895465, 100254, 69, 1, 18, "Input"],
-Cell[3895537, 100257, 94, 1, 18, "Input"]
+Cell[3882947, 99916, 92, 1, 24, "Input"],
+Cell[3883042, 99919, 69, 1, 24, "Input"],
+Cell[3883114, 99922, 94, 1, 24, "Input"]
 }
 ]
 *)
