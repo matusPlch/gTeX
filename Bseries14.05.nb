@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    951560,      25080]
-NotebookOptionsPosition[    951043,      25058]
-NotebookOutlinePosition[    951379,      25073]
-CellTagsIndexPosition[    951336,      25070]
+NotebookDataLength[    951638,      25082]
+NotebookOptionsPosition[    951123,      25060]
+NotebookOutlinePosition[    951457,      25075]
+CellTagsIndexPosition[    951414,      25072]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -536,6 +536,7 @@ Cell[BoxData[{
                     SubscriptBox["m", "nSer"], "2"], 
                     SuperscriptBox["t", "nSer"]}]}], ")"}]}], ")"}]}]]}]}], 
            "]"}]}], " ", "]"}], ";", "\[IndentingNewLine]", 
+        "\[IndentingNewLine]", 
         RowBox[{"(*", 
          RowBox[{
           RowBox[{"modified", " ", "Hall"}], "-", 
@@ -737,7 +738,8 @@ Cell[BoxData[{
    3.6723216373626328`*^9, 3.67232165623666*^9}, {3.6723217209477577`*^9, 
    3.672321736373699*^9}, {3.672321792721847*^9, 3.672321895635434*^9}, {
    3.6723219484798737`*^9, 3.672321949394433*^9}, {3.6723227375713243`*^9, 
-   3.6723227450096827`*^9}, 3.6723227852316513`*^9}],
+   3.6723227450096827`*^9}, 3.6723227852316513`*^9, 3.672324730276223*^9, 
+   3.672344400083476*^9}],
 
 Cell[CellGroupData[{
 
@@ -25056,8 +25058,8 @@ TraditionalForm]\\)\""},
    3.672321798814786*^9, {3.6723230952182283`*^9, 3.672323106030672*^9}}]
 }, Open  ]]
 },
-WindowSize->{1179, 716},
-WindowMargins->{{29, Automatic}, {Automatic, 48}},
+WindowSize->{1366, 744},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
 FrontEndVersion->"10.4 for Linux x86 (64-bit) (April 15, 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -25072,15 +25074,15 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 33343, 719, 2018, "Input"],
+Cell[558, 20, 33423, 721, 2018, "Input"],
 Cell[CellGroupData[{
-Cell[33926, 743, 457, 7, 32, "Input"],
-Cell[34386, 752, 9032, 203, 252, "Output"]
+Cell[34006, 745, 457, 7, 32, "Input"],
+Cell[34466, 754, 9032, 203, 252, "Output"]
 }, Open  ]],
-Cell[43433, 958, 631, 15, 99, "Input"],
+Cell[43513, 960, 631, 15, 99, "Input"],
 Cell[CellGroupData[{
-Cell[44089, 977, 1471, 25, 55, "Input"],
-Cell[45563, 1004, 905464, 24051, 9866, "Output"]
+Cell[44169, 979, 1471, 25, 55, "Input"],
+Cell[45643, 1006, 905464, 24051, 9866, "Output"]
 }, Open  ]]
 }
 ]
