@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    951512,      25080]
-NotebookOptionsPosition[    950995,      25058]
-NotebookOutlinePosition[    951331,      25073]
-CellTagsIndexPosition[    951288,      25070]
+NotebookDataLength[    951560,      25080]
+NotebookOptionsPosition[    951043,      25058]
+NotebookOutlinePosition[    951379,      25073]
+CellTagsIndexPosition[    951336,      25070]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -489,7 +489,7 @@ Cell[BoxData[{
            RowBox[{"Length", "[", 
             RowBox[{
             "s", "\[LeftDoubleBracket]", "i", "\[RightDoubleBracket]"}], 
-            "]"}], "\[Equal]", "2"}], ",", "\[IndentingNewLine]", 
+            "]"}], "\[Equal]", "2"}], ",", 
           RowBox[{"If", "[", "  ", 
            RowBox[{
             RowBox[{"nSer", ">", 
@@ -535,8 +535,7 @@ Cell[BoxData[{
                     SuperscriptBox[
                     SubscriptBox["m", "nSer"], "2"], 
                     SuperscriptBox["t", "nSer"]}]}], ")"}]}], ")"}]}]]}]}], 
-           "]"}]}], " ", "\[IndentingNewLine]", "]"}], ";", 
-        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+           "]"}]}], " ", "]"}], ";", "\[IndentingNewLine]", 
         RowBox[{"(*", 
          RowBox[{
           RowBox[{"modified", " ", "Hall"}], "-", 
@@ -737,7 +736,8 @@ Cell[BoxData[{
    3.672321420846493*^9}, {3.6723214763502502`*^9, 3.672321541937173*^9}, {
    3.6723216373626328`*^9, 3.67232165623666*^9}, {3.6723217209477577`*^9, 
    3.672321736373699*^9}, {3.672321792721847*^9, 3.672321895635434*^9}, {
-   3.6723219484798737`*^9, 3.672321949394433*^9}}],
+   3.6723219484798737`*^9, 3.672321949394433*^9}, {3.6723227375713243`*^9, 
+   3.6723227450096827`*^9}, 3.6723227852316513`*^9}],
 
 Cell[CellGroupData[{
 
@@ -24974,7 +24974,7 @@ TraditionalForm]\\)\""},
      GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}},
       BaselinePosition -> {2, 1}]& ),
    InterpretationFunction->(RowBox[{"Labeled", "[", 
-      RowBox[{#, ",", #2, ",", "Top"}], "]"}]& )]}}, 1]], "Output",
+      RowBox[{#, ",", #2, ",", "Top"}], "]"}]& )]}}, 6]], "Output",
  CellChangeTimes->{{3.6684211608171177`*^9, 3.668421189239043*^9}, {
    3.668421236660885*^9, 3.6684213341921635`*^9}, {3.668421372614048*^9, 
    3.668421405942206*^9}, {3.6684214461837015`*^9, 3.668421462355531*^9}, {
@@ -25053,7 +25053,7 @@ TraditionalForm]\\)\""},
    3.6723212289797*^9, 3.6723212339120703`*^9}, 3.672321308130088*^9, 
    3.67232135109461*^9, {3.67232155129143*^9, 3.672321554826047*^9}, {
    3.672321664860835*^9, 3.6723216699181633`*^9}, 3.6723217425968733`*^9, 
-   3.672321798814786*^9}]
+   3.672321798814786*^9, {3.6723230952182283`*^9, 3.672323106030672*^9}}]
 }, Open  ]]
 },
 WindowSize->{1179, 716},
@@ -25072,7 +25072,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 33343, 719, 2102, "Input"],
+Cell[558, 20, 33343, 719, 2018, "Input"],
 Cell[CellGroupData[{
 Cell[33926, 743, 457, 7, 32, "Input"],
 Cell[34386, 752, 9032, 203, 252, "Output"]
@@ -25080,7 +25080,7 @@ Cell[34386, 752, 9032, 203, 252, "Output"]
 Cell[43433, 958, 631, 15, 99, "Input"],
 Cell[CellGroupData[{
 Cell[44089, 977, 1471, 25, 55, "Input"],
-Cell[45563, 1004, 905416, 24051, 9866, "Output"]
+Cell[45563, 1004, 905464, 24051, 9866, "Output"]
 }, Open  ]]
 }
 ]
