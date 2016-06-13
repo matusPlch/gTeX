@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     98368,       2155]
-NotebookOptionsPosition[     97887,       2135]
-NotebookOutlinePosition[     98223,       2150]
-CellTagsIndexPosition[     98180,       2147]
+NotebookDataLength[     99008,       2164]
+NotebookOptionsPosition[     98527,       2144]
+NotebookOutlinePosition[     98863,       2159]
+CellTagsIndexPosition[     98820,       2156]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -29,9 +29,9 @@ Cell[BoxData[{
      "i", ",", "j", ",", "p0", ",", "p", ",", "\[Rho]", ",", "n", ",", "s", 
       ",", "counts", ",", "key", ",", "val", ",", "delPart", ",", "orbit", 
       ",", "dimO", ",", "dimM", ",", "dt", ",", "\[CapitalGamma]1", ",", 
-      "\[CapitalGamma]2", ",", "HS", ",", "HWG", ",", "mHL", ",", 
-      "BseriesModuli", ",", "Labels", ",", "BseriesModuliTable"}], "}"}], ",",
-     "\[IndentingNewLine]", 
+      "\[CapitalGamma]2", ",", "\[CapitalGamma]s", ",", "HS", ",", "HWG", ",",
+       "mHL", ",", "BseriesModuli", ",", "Labels", ",", 
+      "BseriesModuliTable"}], "}"}], ",", "\[IndentingNewLine]", 
     RowBox[{
      RowBox[{"n", "=", 
       RowBox[{
@@ -690,7 +690,9 @@ Cell[BoxData[{
                RowBox[{"Axes", "\[Rule]", "False"}]}], "*)"}], "]"}]}], ";"}],
            "\[IndentingNewLine]", ",", 
           RowBox[{"\[CapitalGamma]2", "=", "\"\<...\>\""}]}], "]"}], ";", 
-        "\[IndentingNewLine]", "\[IndentingNewLine]", 
+        "\[IndentingNewLine]", 
+        RowBox[{"\[CapitalGamma]s", "=", "\"\<.-.\>\""}], ";", 
+        "\[IndentingNewLine]", 
         RowBox[{"(*", "\[IndentingNewLine]", 
          RowBox[{"(*", "Minimal", "*)"}], "\[IndentingNewLine]", 
          RowBox[{
@@ -916,9 +918,9 @@ Cell[BoxData[{
           RowBox[{"{", 
            RowBox[{
            "orbit", ",", "dimO", ",", "dimM", ",", "dt", ",", 
-            "\[CapitalGamma]1", ",", "\[CapitalGamma]2", ",", "HS", ",", 
-            "HWG", ",", "mHL"}], "}"}]}], "]"}]}]}], "\[IndentingNewLine]", 
-      "]"}], ";", "\[IndentingNewLine]", 
+            "\[CapitalGamma]1", ",", "\[CapitalGamma]2", ",", 
+            "\[CapitalGamma]s", ",", "HS", ",", "HWG", ",", "mHL"}], "}"}]}], 
+         "]"}]}]}], "\[IndentingNewLine]", "]"}], ";", "\[IndentingNewLine]", 
      RowBox[{"BseriesModuli", "=", 
       RowBox[{"Sort", "[", 
        RowBox[{"BseriesModuli", ",", 
@@ -939,8 +941,10 @@ Cell[BoxData[{
 \(H\)]\)\!\(\*SuperscriptBox[\()\), \(\[DoubleStruckCapitalH]\)]\)\>\"", ",", 
          "\"\<\!\(\*SuperscriptBox[\(d\), \(t\)]\)\>\"", ",", 
          "\"\<\!\(\*SubscriptBox[\(\[CapitalGamma]\), \(1\)]\)\>\"", ",", 
-         "\"\<\!\(\*SubscriptBox[\(\[CapitalGamma]\), \(2\)]\)\>\"", ",", 
-         "\"\<Higgs HS\>\"", ",", "\"\<Character HWG\>\"", ",", 
+         "\"\<\!\(\*SuperscriptBox[SubscriptBox[\(\[CapitalGamma]\), \(2\)], \
+\(R\)]\)\>\"", ",", 
+         "\"\<\!\(\*SuperscriptBox[SubscriptBox[\(\[CapitalGamma]\), \(2\)], \
+\(S\)]\)\>\"", ",", "\"\<Higgs HS\>\"", ",", "\"\<Character HWG\>\"", ",", 
          "\"\<mHL HWG\>\""}], "}"}], "}"}]}], ";", "\[IndentingNewLine]", 
      RowBox[{"BseriesModuliTable", "=", 
       RowBox[{"Join", "[", 
@@ -1192,7 +1196,8 @@ Cell[BoxData[{
    3.674657106186277*^9}, {3.674657295851502*^9, 3.6746573605266542`*^9}, 
    3.67479673297023*^9, {3.674797027818541*^9, 3.674797049329299*^9}, {
    3.674797121832469*^9, 3.674797141808362*^9}, {3.67479717278328*^9, 
-   3.674797177146606*^9}}],
+   3.674797177146606*^9}, {3.6748124999494143`*^9, 3.6748125240958033`*^9}, {
+   3.674812557978614*^9, 3.6748125948928747`*^9}}],
 
 Cell[CellGroupData[{
 
@@ -1261,8 +1266,11 @@ Cell[BoxData[
 \\(H\\)]\\)\\!\\(\\*SuperscriptBox[\\()\\), \\(\[DoubleStruckCapitalH]\\)]\\)\
 \"", "\"\\!\\(\\*SuperscriptBox[\\(d\\), \\(t\\)]\\)\"", 
        "\"\\!\\(\\*SubscriptBox[\\(\[CapitalGamma]\\), \\(1\\)]\\)\"", 
-       "\"\\!\\(\\*SubscriptBox[\\(\[CapitalGamma]\\), \\(2\\)]\\)\"", 
-       "\"Higgs HS\"", "\"Character HWG\"", "\"mHL HWG\""}, {
+       "\"\\!\\(\\*SuperscriptBox[SubscriptBox[\\(\[CapitalGamma]\\), \
+\\(2\\)], \\(R\\)]\\)\"", 
+       "\"\\!\\(\\*SuperscriptBox[SubscriptBox[\\(\[CapitalGamma]\\), \
+\\(2\\)], \\(S\\)]\\)\"", "\"Higgs HS\"", "\"Character HWG\"", 
+       "\"mHL HWG\""}, {
        RowBox[{"{", 
          TemplateBox[{"1", "9"}, "Superscript", SyntaxForm -> SuperscriptBox],
           "}"}], "0", "0", 
@@ -1283,7 +1291,7 @@ Cell[BoxData[
             Rational[2, 3], 0.6666666666666666], 0], {}}, {}, {}, 
          InsetBox[
           FormBox["9", TraditionalForm], {2.5, 3.}]}, ImageSize -> {135, 40}],
-        "\"...\"", "1", "1", "\"...\""}, {
+        "\"...\"", "\".-.\"", "1", "1", "\"...\""}, {
        RowBox[{"{", 
          RowBox[{
            
@@ -1348,7 +1356,7 @@ Cell[BoxData[
           StyleBox[
            InsetBox[
             FormBox["1", TraditionalForm], {10., 2.75}], 
-           GrayLevel[1], StripOnInput -> False]}}], 
+           GrayLevel[1], StripOnInput -> False]}}], "\".-.\"", 
        FractionBox["\"polynom\"", 
         SuperscriptBox[
          RowBox[{"(", 
@@ -1427,7 +1435,7 @@ Cell[BoxData[
           StyleBox[
            InsetBox[
             FormBox["2", TraditionalForm], {5., 2.75}], 
-           GrayLevel[1], StripOnInput -> False]}}], 
+           GrayLevel[1], StripOnInput -> False]}}], "\".-.\"", 
        FractionBox["\"polynom\"", 
         SuperscriptBox[
          RowBox[{"(", 
@@ -1472,7 +1480,7 @@ Cell[BoxData[
            FormBox["4", TraditionalForm], {2.5, 0}]}, 
          InsetBox[
           FormBox["9", TraditionalForm], {2.5, 3.}]}, ImageSize -> {135, 40}],
-        "\"...\"", 
+        "\"...\"", "\".-.\"", 
        FractionBox["\"polynom\"", 
         SuperscriptBox[
          RowBox[{"(", 
@@ -1524,7 +1532,7 @@ Cell[BoxData[
            FormBox["1", TraditionalForm], {5., 0}]}, 
          InsetBox[
           FormBox["9", TraditionalForm], {2.5, 3.}]}, ImageSize -> {135, 40}],
-        "\"...\"", 
+        "\"...\"", "\".-.\"", 
        FractionBox["\"polynom\"", 
         SuperscriptBox[
          RowBox[{"(", 
@@ -1568,7 +1576,7 @@ Cell[BoxData[
            FormBox["2", TraditionalForm], {5., 0}]}, 
          InsetBox[
           FormBox["9", TraditionalForm], {2.5, 3.}]}, ImageSize -> {135, 40}],
-        "\"...\"", 
+        "\"...\"", "\".-.\"", 
        FractionBox["\"polynom\"", 
         SuperscriptBox[
          RowBox[{"(", 
@@ -1605,7 +1613,7 @@ Cell[BoxData[
            FormBox["3", TraditionalForm], {5., 0}]}, 
          InsetBox[
           FormBox["9", TraditionalForm], {2.5, 3.}]}, ImageSize -> {135, 40}],
-        "\"...\"", 
+        "\"...\"", "\".-.\"", 
        FractionBox["\"polynom\"", 
         SuperscriptBox[
          RowBox[{"(", 
@@ -1654,7 +1662,7 @@ Cell[BoxData[
            FormBox["1", TraditionalForm], {10., 0}]}, 
          InsetBox[
           FormBox["9", TraditionalForm], {2.5, 3.}]}, ImageSize -> {135, 40}],
-        "\"...\"", 
+        "\"...\"", "\".-.\"", 
        FractionBox["\"polynom\"", 
         SuperscriptBox[
          RowBox[{"(", 
@@ -1699,7 +1707,7 @@ Cell[BoxData[
            FormBox["2", TraditionalForm], {7.5, 0}]}, 
          InsetBox[
           FormBox["9", TraditionalForm], {2.5, 3.}]}, ImageSize -> {135, 40}],
-        "\"...\"", 
+        "\"...\"", "\".-.\"", 
        FractionBox["\"polynom\"", 
         SuperscriptBox[
          RowBox[{"(", 
@@ -1751,7 +1759,7 @@ Cell[BoxData[
            FormBox["1", TraditionalForm], {10., 0}]}, 
          InsetBox[
           FormBox["9", TraditionalForm], {2.5, 3.}]}, ImageSize -> {135, 40}],
-        "\"...\"", 
+        "\"...\"", "\".-.\"", 
        FractionBox["\"polynom\"", 
         SuperscriptBox[
          RowBox[{"(", 
@@ -1800,7 +1808,7 @@ Cell[BoxData[
            FormBox["1", TraditionalForm], {10., 0}]}, 
          InsetBox[
           FormBox["9", TraditionalForm], {2.5, 3.}]}, ImageSize -> {135, 40}],
-        "\"...\"", 
+        "\"...\"", "\".-.\"", 
        FractionBox["\"polynom\"", 
         SuperscriptBox[
          RowBox[{"(", 
@@ -1857,7 +1865,7 @@ Cell[BoxData[
            FormBox["1", TraditionalForm], {15., 0}]}, 
          InsetBox[
           FormBox["9", TraditionalForm], {2.5, 3.}]}, ImageSize -> {135, 40}],
-        "\"...\"", 
+        "\"...\"", "\".-.\"", 
        FractionBox["\"polynom\"", 
         SuperscriptBox[
          RowBox[{"(", 
@@ -1919,7 +1927,7 @@ Cell[BoxData[
            FormBox["1", TraditionalForm], {20., 0}]}, 
          InsetBox[
           FormBox["9", TraditionalForm], {2.5, 3.}]}, ImageSize -> {135, 40}],
-        "\"...\"", 
+        "\"...\"", "\".-.\"", 
        FractionBox["\"polynom\"", 
         SuperscriptBox[
          RowBox[{"(", 
@@ -2081,7 +2089,8 @@ TraditionalForm]\\)\""},
    3.674657341919549*^9, 3.67465737512638*^9}, 3.67466035077775*^9, 
    3.674666409125248*^9, 3.674666452145701*^9, 3.674666499516865*^9, {
    3.674794378623733*^9, 3.674794388739506*^9}, 3.6747954441020613`*^9, 
-   3.674797076998117*^9, 3.67479714315233*^9, 3.674797178458411*^9}]
+   3.674797076998117*^9, 3.67479714315233*^9, 3.674797178458411*^9, 
+   3.674812603666996*^9}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -2134,7 +2143,7 @@ Cell[BoxData[""], "Input",
  CellChangeTimes->{3.674576399342505*^9, 3.674656293501945*^9}]
 },
 WindowSize->{960, 1043},
-WindowMargins->{{Automatic, 960}, {0, Automatic}},
+WindowMargins->{{Automatic, 51}, {Automatic, 28}},
 FrontEndVersion->"10.4 for Linux x86 (64-bit) (April 15, 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -2149,14 +2158,14 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 56157, 1174, 2891, "Input"],
+Cell[558, 20, 56502, 1179, 2891, "Input"],
 Cell[CellGroupData[{
-Cell[56740, 1198, 3986, 55, 32, "Input"],
-Cell[60729, 1255, 34878, 828, 830, "Output"]
+Cell[57085, 1203, 3986, 55, 32, "Input"],
+Cell[61074, 1260, 35173, 832, 830, "Output"]
 }, Open  ]],
-Cell[95622, 2086, 631, 15, 99, "Input"],
-Cell[96256, 2103, 1534, 27, 55, "Input"],
-Cell[97793, 2132, 90, 1, 32, "Input"]
+Cell[96262, 2095, 631, 15, 99, "Input"],
+Cell[96896, 2112, 1534, 27, 55, "Input"],
+Cell[98433, 2141, 90, 1, 65, "Input"]
 }
 ]
 *)
