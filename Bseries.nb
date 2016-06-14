@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     99008,       2164]
-NotebookOptionsPosition[     98527,       2144]
-NotebookOutlinePosition[     98863,       2159]
-CellTagsIndexPosition[     98820,       2156]
+NotebookDataLength[    132364,       3125]
+NotebookOptionsPosition[    131876,       3105]
+NotebookOutlinePosition[    132214,       3120]
+CellTagsIndexPosition[    132171,       3117]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -691,7 +691,73 @@ Cell[BoxData[{
            "\[IndentingNewLine]", ",", 
           RowBox[{"\[CapitalGamma]2", "=", "\"\<...\>\""}]}], "]"}], ";", 
         "\[IndentingNewLine]", 
-        RowBox[{"\[CapitalGamma]s", "=", "\"\<.-.\>\""}], ";", 
+        RowBox[{"\[Iota]", " ", "=", 
+         RowBox[{"\[CurlyPhi]", " ", "=", "1"}]}], ";", "\[IndentingNewLine]", 
+        RowBox[{"If", "[", 
+         RowBox[{
+          RowBox[{"OddQ", "[", 
+           RowBox[{"nSer", "-", "1"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"\[Iota]", " ", "=", " ", "1"}], ",", 
+            RowBox[{"\[CurlyPhi]", " ", "=", "2"}]}], "}"}], ",", 
+          RowBox[{"{", 
+           RowBox[{
+            RowBox[{"\[Iota]", " ", "=", " ", "2"}], ",", 
+            RowBox[{"\[CurlyPhi]", " ", "=", "1"}]}], "}"}]}], "]"}], ";", 
+        "\[IndentingNewLine]", 
+        RowBox[{"\[CapitalGamma]s", " ", "=", 
+         RowBox[{"Graphics", "[", 
+          RowBox[{"{", "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"Black", ",", " ", 
+              RowBox[{"Line", "[", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"{", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{"\[Sigma]", " ", "dx"}], ")"}], " ", ",", "0"}], 
+                  "}"}], ",", 
+                 RowBox[{"{", 
+                  RowBox[{
+                   RowBox[{"(", 
+                    RowBox[{
+                    RowBox[{"(", 
+                    RowBox[{"n", "-", "1"}], ")"}], " ", "\[Sigma]", " ", 
+                    "dx"}], ")"}], ",", "0"}], "}"}]}], "}"}], "]"}]}], "}"}],
+             ",", "\[IndentingNewLine]", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"Darker", "[", "Yellow", "]"}], ",", 
+              RowBox[{"Table", "[", 
+               RowBox[{
+                RowBox[{"Disk", "[", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"\[Sigma]", " ", "k", " ", "dx"}], ",", "0"}], 
+                   "}"}], ",", "r"}], "]"}], ",", 
+                RowBox[{"{", 
+                 RowBox[{"k", ",", "\[Iota]", ",", 
+                  RowBox[{"n", "-", "1"}], ",", "2"}], "}"}]}], "]"}]}], 
+             "}"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"Darker", "[", "Green", "]"}], ",", 
+              RowBox[{"Table", "[", 
+               RowBox[{
+                RowBox[{"Disk", "[", 
+                 RowBox[{
+                  RowBox[{"{", 
+                   RowBox[{
+                    RowBox[{"\[Sigma]", " ", "k", " ", "dx"}], ",", "0"}], 
+                   "}"}], ",", "r"}], "]"}], ",", 
+                RowBox[{"{", 
+                 RowBox[{"k", ",", "\[CurlyPhi]", ",", 
+                  RowBox[{"n", "-", "1"}], ",", "2"}], "}"}]}], "]"}]}], 
+             "}"}]}], "\[IndentingNewLine]", "}"}], "]"}]}], ";", 
         "\[IndentingNewLine]", 
         RowBox[{"(*", "\[IndentingNewLine]", 
          RowBox[{"(*", "Minimal", "*)"}], "\[IndentingNewLine]", 
@@ -1197,12 +1263,15 @@ Cell[BoxData[{
    3.67479673297023*^9, {3.674797027818541*^9, 3.674797049329299*^9}, {
    3.674797121832469*^9, 3.674797141808362*^9}, {3.67479717278328*^9, 
    3.674797177146606*^9}, {3.6748124999494143`*^9, 3.6748125240958033`*^9}, {
-   3.674812557978614*^9, 3.6748125948928747`*^9}}],
+   3.674812557978614*^9, 3.6748125948928747`*^9}, 3.67490934402098*^9, {
+   3.674909507896536*^9, 3.6749095622354918`*^9}, {3.674909628206271*^9, 
+   3.674909632209807*^9}, 3.674909666077756*^9, {3.674909708534485*^9, 
+   3.674909708655545*^9}}],
 
 Cell[CellGroupData[{
 
 Cell[BoxData[
- RowBox[{"Bseries", "[", "4", "]"}]], "Input",
+ RowBox[{"Bseries", "[", "5", "]"}]], "Input",
  CellChangeTimes->{
   3.66842144069928*^9, 3.6690079447202916`*^9, {3.6690080789013777`*^9, 
    3.669008098442378*^9}, {3.6690104645876503`*^9, 3.6690104658126736`*^9}, 
@@ -1256,7 +1325,8 @@ Cell[BoxData[
    3.674657373074574*^9, {3.674660347716667*^9, 3.674660348751512*^9}, {
    3.674660657391635*^9, 3.6746606587171297`*^9}, {3.674666386733279*^9, 
    3.674666403753014*^9}, {3.674666436939843*^9, 3.674666439107435*^9}, 
-   3.674666494648045*^9, {3.674795442706949*^9, 3.6747954428022547`*^9}}],
+   3.674666494648045*^9, {3.674795442706949*^9, 3.6747954428022547`*^9}, {
+   3.674909721268764*^9, 3.674909721379798*^9}}],
 
 Cell[BoxData[
  TemplateBox[{TagBox[
@@ -1272,9 +1342,9 @@ Cell[BoxData[
 \\(2\\)], \\(S\\)]\\)\"", "\"Higgs HS\"", "\"Character HWG\"", 
        "\"mHL HWG\""}, {
        RowBox[{"{", 
-         TemplateBox[{"1", "9"}, "Superscript", SyntaxForm -> SuperscriptBox],
-          "}"}], "0", "0", 
-       RowBox[{"{", "9", "}"}], 
+         TemplateBox[{"1", "11"}, "Superscript", SyntaxForm -> 
+          SuperscriptBox], "}"}], "0", "0", 
+       RowBox[{"{", "11", "}"}], 
        GraphicsBox[{{
           EdgeForm[{
             Thickness[Tiny], 
@@ -1290,18 +1360,39 @@ Cell[BoxData[
            NCache[
             Rational[2, 3], 0.6666666666666666], 0], {}}, {}, {}, 
          InsetBox[
-          FormBox["9", TraditionalForm], {2.5, 3.}]}, ImageSize -> {135, 40}],
-        "\"...\"", "\".-.\"", "1", "1", "\"...\""}, {
+          FormBox["11", TraditionalForm], {2.5, 3.}]}, 
+        ImageSize -> {165, 40}], "\"...\"", 
+       GraphicsBox[{{
+          GrayLevel[0], 
+          LineBox[{{5., 0}, {50., 0}}]}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{10., 0}, 1], 
+           DiskBox[{20., 0}, 1], 
+           DiskBox[{30., 0}, 1], 
+           DiskBox[{40., 0}, 1], 
+           DiskBox[{50., 0}, 1]}}, {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{5., 0}, 1], 
+           DiskBox[{15., 0}, 1], 
+           DiskBox[{25., 0}, 1], 
+           DiskBox[{35., 0}, 1], 
+           DiskBox[{45., 0}, 1]}}}], "1", "1", "\"...\""}, {
        RowBox[{"{", 
          RowBox[{
            
            TemplateBox[{"2", "2"}, "Superscript", SyntaxForm -> 
             SuperscriptBox], ",", 
            
-           TemplateBox[{"1", "5"}, "Superscript", SyntaxForm -> 
-            SuperscriptBox]}], "}"}], "12", "6", 
+           TemplateBox[{"1", "7"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox]}], "}"}], "16", "8", 
        RowBox[{"{", 
-         RowBox[{"7", ",", "2"}], "}"}], 
+         RowBox[{"9", ",", "2"}], "}"}], 
        GraphicsBox[{{
           EdgeForm[{
             Thickness[Tiny], 
@@ -1321,20 +1412,23 @@ Cell[BoxData[
           InsetBox[
            FormBox["2", TraditionalForm], {2.5, 0}]}, 
          InsetBox[
-          FormBox["9", TraditionalForm], {2.5, 3.}]}, ImageSize -> {135, 40}], 
+          FormBox["11", TraditionalForm], {2.5, 3.}]}, 
+        ImageSize -> {165, 40}], 
        GraphicsBox[{
          LineBox[{{10., 0}, {10., 2}}], {
-          LineBox[{{15., 0.3}, {20., 0.3}}]}, {
-          LineBox[{{15., -0.3}, {20., -0.3}}]}, 
-         LineBox[{{18., 0}, {17., 1}}], 
-         LineBox[{{18., 0}, {17., -1}}], {
+          LineBox[{{20., 0.3}, {25., 0.3}}]}, {
+          LineBox[{{20., -0.3}, {25., -0.3}}]}, 
+         LineBox[{{23., 0}, {22., 1}}], 
+         LineBox[{{23., 0}, {22., -1}}], {
           LineBox[{{6., 0}, {9., 0}}], 
-          LineBox[{{11., 0}, {14., 0}}]}, {
+          LineBox[{{11., 0}, {14., 0}}], 
+          LineBox[{{16., 0}, {19., 0}}]}, {
           RGBColor[0, 0, 1], {
            DiskBox[{5., 0}, 1], 
            DiskBox[{10., 0}, 1], 
            DiskBox[{15., 0}, 1], 
-           DiskBox[{20., 0}, 1]}}, {
+           DiskBox[{20., 0}, 1], 
+           DiskBox[{25., 0}, 1]}}, {
           StyleBox[
            InsetBox[
             FormBox["1", TraditionalForm], {5., 0}], 
@@ -1349,19 +1443,44 @@ Cell[BoxData[
            GrayLevel[1], StripOnInput -> False], 
           StyleBox[
            InsetBox[
-            FormBox["1", TraditionalForm], {20., 0}], 
+            FormBox["2", TraditionalForm], {20., 0}], 
+           GrayLevel[1], StripOnInput -> False], 
+          StyleBox[
+           InsetBox[
+            FormBox["1", TraditionalForm], {25., 0}], 
            GrayLevel[1], StripOnInput -> False]}, {
           RGBColor[1, 0, 0], 
           RectangleBox[{9., 3.5}, {11., 1.5}]}, {
           StyleBox[
            InsetBox[
             FormBox["1", TraditionalForm], {10., 2.75}], 
-           GrayLevel[1], StripOnInput -> False]}}], "\".-.\"", 
+           GrayLevel[1], StripOnInput -> False]}}], 
+       GraphicsBox[{{
+          GrayLevel[0], 
+          LineBox[{{5., 0}, {50., 0}}]}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{10., 0}, 1], 
+           DiskBox[{20., 0}, 1], 
+           DiskBox[{30., 0}, 1], 
+           DiskBox[{40., 0}, 1], 
+           DiskBox[{50., 0}, 1]}}, {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{5., 0}, 1], 
+           DiskBox[{15., 0}, 1], 
+           DiskBox[{25., 0}, 1], 
+           DiskBox[{35., 0}, 1], 
+           DiskBox[{45., 0}, 1]}}}], 
        FractionBox["\"polynom\"", 
         SuperscriptBox[
          RowBox[{"(", 
            RowBox[{"1", "-", 
-             SuperscriptBox["t", "2"]}], ")"}], "12"]], 
+             SuperscriptBox["t", "2"]}], ")"}], "16"]], 
        FractionBox["1", 
         RowBox[{"1", "-", 
           RowBox[{
@@ -1370,10 +1489,10 @@ Cell[BoxData[
        RowBox[{"{", 
          RowBox[{"3", ",", 
            
-           TemplateBox[{"1", "6"}, "Superscript", SyntaxForm -> 
-            SuperscriptBox]}], "}"}], "14", "7", 
+           TemplateBox[{"1", "8"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox]}], "}"}], "18", "9", 
        RowBox[{"{", 
-         RowBox[{"7", ",", 
+         RowBox[{"9", ",", 
            
            TemplateBox[{"1", "2"}, "Superscript", SyntaxForm -> 
             SuperscriptBox]}], "}"}], 
@@ -1400,20 +1519,23 @@ Cell[BoxData[
           InsetBox[
            FormBox["1", TraditionalForm], {5., 0}]}, 
          InsetBox[
-          FormBox["9", TraditionalForm], {2.5, 3.}]}, ImageSize -> {135, 40}], 
+          FormBox["11", TraditionalForm], {2.5, 3.}]}, 
+        ImageSize -> {165, 40}], 
        GraphicsBox[{
          LineBox[{{5., 0}, {5., 2}}], {
-          LineBox[{{15., 0.3}, {20., 0.3}}]}, {
-          LineBox[{{15., -0.3}, {20., -0.3}}]}, 
-         LineBox[{{18., 0}, {17., 1}}], 
-         LineBox[{{18., 0}, {17., -1}}], {
+          LineBox[{{20., 0.3}, {25., 0.3}}]}, {
+          LineBox[{{20., -0.3}, {25., -0.3}}]}, 
+         LineBox[{{23., 0}, {22., 1}}], 
+         LineBox[{{23., 0}, {22., -1}}], {
           LineBox[{{6., 0}, {9., 0}}], 
-          LineBox[{{11., 0}, {14., 0}}]}, {
+          LineBox[{{11., 0}, {14., 0}}], 
+          LineBox[{{16., 0}, {19., 0}}]}, {
           RGBColor[0, 0, 1], {
            DiskBox[{5., 0}, 1], 
            DiskBox[{10., 0}, 1], 
            DiskBox[{15., 0}, 1], 
-           DiskBox[{20., 0}, 1]}}, {
+           DiskBox[{20., 0}, 1], 
+           DiskBox[{25., 0}, 1]}}, {
           StyleBox[
            InsetBox[
             FormBox["2", TraditionalForm], {5., 0}], 
@@ -1428,19 +1550,44 @@ Cell[BoxData[
            GrayLevel[1], StripOnInput -> False], 
           StyleBox[
            InsetBox[
-            FormBox["1", TraditionalForm], {20., 0}], 
+            FormBox["2", TraditionalForm], {20., 0}], 
+           GrayLevel[1], StripOnInput -> False], 
+          StyleBox[
+           InsetBox[
+            FormBox["1", TraditionalForm], {25., 0}], 
            GrayLevel[1], StripOnInput -> False]}, {
           RGBColor[1, 0, 0], 
           RectangleBox[{4., 3.5}, {6., 1.5}]}, {
           StyleBox[
            InsetBox[
             FormBox["2", TraditionalForm], {5., 2.75}], 
-           GrayLevel[1], StripOnInput -> False]}}], "\".-.\"", 
+           GrayLevel[1], StripOnInput -> False]}}], 
+       GraphicsBox[{{
+          GrayLevel[0], 
+          LineBox[{{5., 0}, {50., 0}}]}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{10., 0}, 1], 
+           DiskBox[{20., 0}, 1], 
+           DiskBox[{30., 0}, 1], 
+           DiskBox[{40., 0}, 1], 
+           DiskBox[{50., 0}, 1]}}, {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{5., 0}, 1], 
+           DiskBox[{15., 0}, 1], 
+           DiskBox[{25., 0}, 1], 
+           DiskBox[{35., 0}, 1], 
+           DiskBox[{45., 0}, 1]}}}], 
        FractionBox["\"polynom\"", 
         SuperscriptBox[
          RowBox[{"(", 
            RowBox[{"1", "-", 
-             SuperscriptBox["t", "2"]}], ")"}], "14"]], 
+             SuperscriptBox["t", "2"]}], ")"}], "18"]], 
        FractionBox["1", 
         RowBox[{
           RowBox[{"(", 
@@ -1457,9 +1604,12 @@ Cell[BoxData[
          RowBox[{
            
            TemplateBox[{"2", "4"}, "Superscript", SyntaxForm -> 
-            SuperscriptBox], ",", "1"}], "}"}], "16", "8", 
+            SuperscriptBox], ",", 
+           
+           TemplateBox[{"1", "3"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox]}], "}"}], "24", "12", 
        RowBox[{"{", 
-         RowBox[{"5", ",", "4"}], "}"}], 
+         RowBox[{"7", ",", "4"}], "}"}], 
        GraphicsBox[{{
           EdgeForm[{
             Thickness[Tiny], 
@@ -1479,13 +1629,34 @@ Cell[BoxData[
           InsetBox[
            FormBox["4", TraditionalForm], {2.5, 0}]}, 
          InsetBox[
-          FormBox["9", TraditionalForm], {2.5, 3.}]}, ImageSize -> {135, 40}],
-        "\"...\"", "\".-.\"", 
+          FormBox["11", TraditionalForm], {2.5, 3.}]}, 
+        ImageSize -> {165, 40}], "\"...\"", 
+       GraphicsBox[{{
+          GrayLevel[0], 
+          LineBox[{{5., 0}, {50., 0}}]}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{10., 0}, 1], 
+           DiskBox[{20., 0}, 1], 
+           DiskBox[{30., 0}, 1], 
+           DiskBox[{40., 0}, 1], 
+           DiskBox[{50., 0}, 1]}}, {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{5., 0}, 1], 
+           DiskBox[{15., 0}, 1], 
+           DiskBox[{25., 0}, 1], 
+           DiskBox[{35., 0}, 1], 
+           DiskBox[{45., 0}, 1]}}}], 
        FractionBox["\"polynom\"", 
         SuperscriptBox[
          RowBox[{"(", 
            RowBox[{"1", "-", 
-             SuperscriptBox["t", "2"]}], ")"}], "16"]], 
+             SuperscriptBox["t", "2"]}], ")"}], "24"]], 
        FractionBox["1", 
         RowBox[{
           RowBox[{"(", 
@@ -1497,17 +1668,17 @@ Cell[BoxData[
             RowBox[{"1", "-", 
               RowBox[{
                 SuperscriptBox["t", "4"], " ", 
-                SubsuperscriptBox["m", "4", "2"]}]}], ")"}]}]], "\"...\""}, {
+                SubscriptBox["m", "4"]}]}], ")"}]}]], "\"...\""}, {
        RowBox[{"{", 
          RowBox[{"3", ",", 
            
            TemplateBox[{"2", "2"}, "Superscript", SyntaxForm -> 
             SuperscriptBox], ",", 
            
-           TemplateBox[{"1", "2"}, "Superscript", SyntaxForm -> 
-            SuperscriptBox]}], "}"}], "20", "10", 
+           TemplateBox[{"1", "4"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox]}], "}"}], "28", "14", 
        RowBox[{"{", 
-         RowBox[{"5", ",", "3", ",", "1"}], "}"}], 
+         RowBox[{"7", ",", "3", ",", "1"}], "}"}], 
        GraphicsBox[{{
           EdgeForm[{
             Thickness[Tiny], 
@@ -1531,13 +1702,96 @@ Cell[BoxData[
           InsetBox[
            FormBox["1", TraditionalForm], {5., 0}]}, 
          InsetBox[
-          FormBox["9", TraditionalForm], {2.5, 3.}]}, ImageSize -> {135, 40}],
-        "\"...\"", "\".-.\"", 
+          FormBox["11", TraditionalForm], {2.5, 3.}]}, 
+        ImageSize -> {165, 40}], "\"...\"", 
+       GraphicsBox[{{
+          GrayLevel[0], 
+          LineBox[{{5., 0}, {50., 0}}]}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{10., 0}, 1], 
+           DiskBox[{20., 0}, 1], 
+           DiskBox[{30., 0}, 1], 
+           DiskBox[{40., 0}, 1], 
+           DiskBox[{50., 0}, 1]}}, {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{5., 0}, 1], 
+           DiskBox[{15., 0}, 1], 
+           DiskBox[{25., 0}, 1], 
+           DiskBox[{35., 0}, 1], 
+           DiskBox[{45., 0}, 1]}}}], 
        FractionBox["\"polynom\"", 
         SuperscriptBox[
          RowBox[{"(", 
            RowBox[{"1", "-", 
-             SuperscriptBox["t", "2"]}], ")"}], "20"]], "\"...\"", 
+             SuperscriptBox["t", "2"]}], ")"}], "28"]], "\"...\"", 
+       "\"...\""}, {
+       RowBox[{"{", 
+         RowBox[{"3", ",", 
+           
+           TemplateBox[{"2", "4"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox]}], "}"}], "30", "15", 
+       RowBox[{"{", 
+         RowBox[{
+           
+           TemplateBox[{"5", "2"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox], ",", "1"}], "}"}], 
+       GraphicsBox[{{
+          EdgeForm[{
+            Thickness[Tiny], 
+            RGBColor[0, 0, 1]}], 
+          GrayLevel[1], 
+          RectangleBox[{1.5, 4.}, {3.5, 1.5}]}, 
+         LineBox[{{2.5, 1.}, {2.5, 1.5}}], {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           CircleBox[{5., 0}, 1]}}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           CircleBox[{2.5, 0}, 1]}}, {
+          LineBox[{{3.5, 0}, {4., 0}}]}, {
+          InsetBox[
+           FormBox["6", TraditionalForm], {2.5, 0}], 
+          InsetBox[
+           FormBox["1", TraditionalForm], {5., 0}]}, 
+         InsetBox[
+          FormBox["11", TraditionalForm], {2.5, 3.}]}, 
+        ImageSize -> {165, 40}], "\"...\"", 
+       GraphicsBox[{{
+          GrayLevel[0], 
+          LineBox[{{5., 0}, {50., 0}}]}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{10., 0}, 1], 
+           DiskBox[{20., 0}, 1], 
+           DiskBox[{30., 0}, 1], 
+           DiskBox[{40., 0}, 1], 
+           DiskBox[{50., 0}, 1]}}, {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{5., 0}, 1], 
+           DiskBox[{15., 0}, 1], 
+           DiskBox[{25., 0}, 1], 
+           DiskBox[{35., 0}, 1], 
+           DiskBox[{45., 0}, 1]}}}], 
+       FractionBox["\"polynom\"", 
+        SuperscriptBox[
+         RowBox[{"(", 
+           RowBox[{"1", "-", 
+             SuperscriptBox["t", "2"]}], ")"}], "30"]], "\"...\"", 
        "\"...\""}, {
        RowBox[{"{", 
          RowBox[{
@@ -1545,10 +1799,10 @@ Cell[BoxData[
            TemplateBox[{"3", "2"}, "Superscript", SyntaxForm -> 
             SuperscriptBox], ",", 
            
-           TemplateBox[{"1", "3"}, "Superscript", SyntaxForm -> 
-            SuperscriptBox]}], "}"}], "22", "11", 
+           TemplateBox[{"1", "5"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox]}], "}"}], "30", "15", 
        RowBox[{"{", 
-         RowBox[{"5", ",", 
+         RowBox[{"7", ",", 
            
            TemplateBox[{"2", "2"}, "Superscript", SyntaxForm -> 
             SuperscriptBox]}], "}"}], 
@@ -1575,58 +1829,42 @@ Cell[BoxData[
           InsetBox[
            FormBox["2", TraditionalForm], {5., 0}]}, 
          InsetBox[
-          FormBox["9", TraditionalForm], {2.5, 3.}]}, ImageSize -> {135, 40}],
-        "\"...\"", "\".-.\"", 
-       FractionBox["\"polynom\"", 
-        SuperscriptBox[
-         RowBox[{"(", 
-           RowBox[{"1", "-", 
-             SuperscriptBox["t", "2"]}], ")"}], "22"]], "\"...\"", 
-       "\"...\""}, {
-       RowBox[{"{", 
-         TemplateBox[{"3", "3"}, "Superscript", SyntaxForm -> SuperscriptBox],
-          "}"}], "24", "12", 
-       RowBox[{"{", 
-         TemplateBox[{"3", "3"}, "Superscript", SyntaxForm -> SuperscriptBox],
-          "}"}], 
+          FormBox["11", TraditionalForm], {2.5, 3.}]}, 
+        ImageSize -> {165, 40}], "\"...\"", 
        GraphicsBox[{{
-          EdgeForm[{
-            Thickness[Tiny], 
-            RGBColor[0, 0, 1]}], 
-          GrayLevel[1], 
-          RectangleBox[{1.5, 4.}, {3.5, 1.5}]}, 
-         LineBox[{{2.5, 1.}, {2.5, 1.5}}], {
-          RGBColor[0, 
-           NCache[
-            Rational[2, 3], 0.6666666666666666], 0], {
-           CircleBox[{5., 0}, 1]}}, {
+          GrayLevel[0], 
+          LineBox[{{5., 0}, {50., 0}}]}, {
           RGBColor[
            NCache[
             Rational[2, 3], 0.6666666666666666], 
            NCache[
             Rational[2, 3], 0.6666666666666666], 0], {
-           CircleBox[{2.5, 0}, 1]}}, {
-          LineBox[{{3.5, 0}, {4., 0}}]}, {
-          InsetBox[
-           FormBox["6", TraditionalForm], {2.5, 0}], 
-          InsetBox[
-           FormBox["3", TraditionalForm], {5., 0}]}, 
-         InsetBox[
-          FormBox["9", TraditionalForm], {2.5, 3.}]}, ImageSize -> {135, 40}],
-        "\"...\"", "\".-.\"", 
+           DiskBox[{10., 0}, 1], 
+           DiskBox[{20., 0}, 1], 
+           DiskBox[{30., 0}, 1], 
+           DiskBox[{40., 0}, 1], 
+           DiskBox[{50., 0}, 1]}}, {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{5., 0}, 1], 
+           DiskBox[{15., 0}, 1], 
+           DiskBox[{25., 0}, 1], 
+           DiskBox[{35., 0}, 1], 
+           DiskBox[{45., 0}, 1]}}}], 
        FractionBox["\"polynom\"", 
         SuperscriptBox[
          RowBox[{"(", 
            RowBox[{"1", "-", 
-             SuperscriptBox["t", "2"]}], ")"}], "24"]], "\"...\"", 
+             SuperscriptBox["t", "2"]}], ")"}], "30"]], "\"...\"", 
        "\"...\""}, {
        RowBox[{"{", 
          RowBox[{"5", ",", 
            
-           TemplateBox[{"1", "4"}, "Superscript", SyntaxForm -> 
-            SuperscriptBox]}], "}"}], "24", "12", 
+           TemplateBox[{"1", "6"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox]}], "}"}], "32", "16", 
        RowBox[{"{", 
-         RowBox[{"5", ",", 
+         RowBox[{"7", ",", 
            
            TemplateBox[{"1", "4"}, "Superscript", SyntaxForm -> 
             SuperscriptBox]}], "}"}], 
@@ -1661,21 +1899,172 @@ Cell[BoxData[
           InsetBox[
            FormBox["1", TraditionalForm], {10., 0}]}, 
          InsetBox[
-          FormBox["9", TraditionalForm], {2.5, 3.}]}, ImageSize -> {135, 40}],
-        "\"...\"", "\".-.\"", 
+          FormBox["11", TraditionalForm], {2.5, 3.}]}, 
+        ImageSize -> {165, 40}], "\"...\"", 
+       GraphicsBox[{{
+          GrayLevel[0], 
+          LineBox[{{5., 0}, {50., 0}}]}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{10., 0}, 1], 
+           DiskBox[{20., 0}, 1], 
+           DiskBox[{30., 0}, 1], 
+           DiskBox[{40., 0}, 1], 
+           DiskBox[{50., 0}, 1]}}, {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{5., 0}, 1], 
+           DiskBox[{15., 0}, 1], 
+           DiskBox[{25., 0}, 1], 
+           DiskBox[{35., 0}, 1], 
+           DiskBox[{45., 0}, 1]}}}], 
        FractionBox["\"polynom\"", 
         SuperscriptBox[
          RowBox[{"(", 
            RowBox[{"1", "-", 
-             SuperscriptBox["t", "2"]}], ")"}], "24"]], "\"...\"", 
+             SuperscriptBox["t", "2"]}], ")"}], "32"]], "\"...\"", 
+       "\"...\""}, {
+       RowBox[{"{", 
+         RowBox[{
+           
+           TemplateBox[{"3", "2"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox], ",", 
+           
+           TemplateBox[{"2", "2"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox], ",", "1"}], "}"}], "34", "17", 
+       RowBox[{"{", 
+         RowBox[{"5", ",", "4", ",", "2"}], "}"}], 
+       GraphicsBox[{{
+          EdgeForm[{
+            Thickness[Tiny], 
+            RGBColor[0, 0, 1]}], 
+          GrayLevel[1], 
+          RectangleBox[{1.5, 4.}, {3.5, 1.5}]}, 
+         LineBox[{{2.5, 1.}, {2.5, 1.5}}], {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           CircleBox[{5., 0}, 1]}}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           CircleBox[{2.5, 0}, 1]}}, {
+          LineBox[{{3.5, 0}, {4., 0}}]}, {
+          InsetBox[
+           FormBox["6", TraditionalForm], {2.5, 0}], 
+          InsetBox[
+           FormBox["2", TraditionalForm], {5., 0}]}, 
+         InsetBox[
+          FormBox["11", TraditionalForm], {2.5, 3.}]}, 
+        ImageSize -> {165, 40}], "\"...\"", 
+       GraphicsBox[{{
+          GrayLevel[0], 
+          LineBox[{{5., 0}, {50., 0}}]}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{10., 0}, 1], 
+           DiskBox[{20., 0}, 1], 
+           DiskBox[{30., 0}, 1], 
+           DiskBox[{40., 0}, 1], 
+           DiskBox[{50., 0}, 1]}}, {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{5., 0}, 1], 
+           DiskBox[{15., 0}, 1], 
+           DiskBox[{25., 0}, 1], 
+           DiskBox[{35., 0}, 1], 
+           DiskBox[{45., 0}, 1]}}}], 
+       FractionBox["\"polynom\"", 
+        SuperscriptBox[
+         RowBox[{"(", 
+           RowBox[{"1", "-", 
+             SuperscriptBox["t", "2"]}], ")"}], "34"]], "\"...\"", 
+       "\"...\""}, {
+       RowBox[{"{", 
+         RowBox[{
+           
+           TemplateBox[{"3", "3"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox], ",", 
+           
+           TemplateBox[{"1", "2"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox]}], "}"}], "36", "18", 
+       RowBox[{"{", 
+         RowBox[{"5", ",", 
+           
+           TemplateBox[{"3", "2"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox]}], "}"}], 
+       GraphicsBox[{{
+          EdgeForm[{
+            Thickness[Tiny], 
+            RGBColor[0, 0, 1]}], 
+          GrayLevel[1], 
+          RectangleBox[{1.5, 4.}, {3.5, 1.5}]}, 
+         LineBox[{{2.5, 1.}, {2.5, 1.5}}], {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           CircleBox[{5., 0}, 1]}}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           CircleBox[{2.5, 0}, 1]}}, {
+          LineBox[{{3.5, 0}, {4., 0}}]}, {
+          InsetBox[
+           FormBox["6", TraditionalForm], {2.5, 0}], 
+          InsetBox[
+           FormBox["3", TraditionalForm], {5., 0}]}, 
+         InsetBox[
+          FormBox["11", TraditionalForm], {2.5, 3.}]}, 
+        ImageSize -> {165, 40}], "\"...\"", 
+       GraphicsBox[{{
+          GrayLevel[0], 
+          LineBox[{{5., 0}, {50., 0}}]}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{10., 0}, 1], 
+           DiskBox[{20., 0}, 1], 
+           DiskBox[{30., 0}, 1], 
+           DiskBox[{40., 0}, 1], 
+           DiskBox[{50., 0}, 1]}}, {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{5., 0}, 1], 
+           DiskBox[{15., 0}, 1], 
+           DiskBox[{25., 0}, 1], 
+           DiskBox[{35., 0}, 1], 
+           DiskBox[{45., 0}, 1]}}}], 
+       FractionBox["\"polynom\"", 
+        SuperscriptBox[
+         RowBox[{"(", 
+           RowBox[{"1", "-", 
+             SuperscriptBox["t", "2"]}], ")"}], "36"]], "\"...\"", 
        "\"...\""}, {
        RowBox[{"{", 
          RowBox[{
            
            TemplateBox[{"4", "2"}, "Superscript", SyntaxForm -> 
-            SuperscriptBox], ",", "1"}], "}"}], "26", "13", 
+            SuperscriptBox], ",", 
+           
+           TemplateBox[{"1", "3"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox]}], "}"}], "38", "19", 
        RowBox[{"{", 
-         RowBox[{"3", ",", 
+         RowBox[{"5", ",", 
            
            TemplateBox[{"2", "3"}, "Superscript", SyntaxForm -> 
             SuperscriptBox]}], "}"}], 
@@ -1706,24 +2095,45 @@ Cell[BoxData[
           InsetBox[
            FormBox["2", TraditionalForm], {7.5, 0}]}, 
          InsetBox[
-          FormBox["9", TraditionalForm], {2.5, 3.}]}, ImageSize -> {135, 40}],
-        "\"...\"", "\".-.\"", 
+          FormBox["11", TraditionalForm], {2.5, 3.}]}, 
+        ImageSize -> {165, 40}], "\"...\"", 
+       GraphicsBox[{{
+          GrayLevel[0], 
+          LineBox[{{5., 0}, {50., 0}}]}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{10., 0}, 1], 
+           DiskBox[{20., 0}, 1], 
+           DiskBox[{30., 0}, 1], 
+           DiskBox[{40., 0}, 1], 
+           DiskBox[{50., 0}, 1]}}, {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{5., 0}, 1], 
+           DiskBox[{15., 0}, 1], 
+           DiskBox[{25., 0}, 1], 
+           DiskBox[{35., 0}, 1], 
+           DiskBox[{45., 0}, 1]}}}], 
        FractionBox["\"polynom\"", 
         SuperscriptBox[
          RowBox[{"(", 
            RowBox[{"1", "-", 
-             SuperscriptBox["t", "2"]}], ")"}], "26"]], "\"...\"", 
+             SuperscriptBox["t", "2"]}], ")"}], "38"]], "\"...\"", 
        "\"...\""}, {
        RowBox[{"{", 
          RowBox[{"5", ",", 
            
            TemplateBox[{"2", "2"}, "Superscript", SyntaxForm -> 
-            SuperscriptBox]}], "}"}], "26", "13", 
-       RowBox[{"{", 
-         RowBox[{
-           
-           TemplateBox[{"3", "2"}, "Superscript", SyntaxForm -> 
             SuperscriptBox], ",", 
+           
+           TemplateBox[{"1", "2"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox]}], "}"}], "38", "19", 
+       RowBox[{"{", 
+         RowBox[{"5", ",", "3", ",", 
            
            TemplateBox[{"1", "3"}, "Superscript", SyntaxForm -> 
             SuperscriptBox]}], "}"}], 
@@ -1758,18 +2168,108 @@ Cell[BoxData[
           InsetBox[
            FormBox["1", TraditionalForm], {10., 0}]}, 
          InsetBox[
-          FormBox["9", TraditionalForm], {2.5, 3.}]}, ImageSize -> {135, 40}],
-        "\"...\"", "\".-.\"", 
+          FormBox["11", TraditionalForm], {2.5, 3.}]}, 
+        ImageSize -> {165, 40}], "\"...\"", 
+       GraphicsBox[{{
+          GrayLevel[0], 
+          LineBox[{{5., 0}, {50., 0}}]}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{10., 0}, 1], 
+           DiskBox[{20., 0}, 1], 
+           DiskBox[{30., 0}, 1], 
+           DiskBox[{40., 0}, 1], 
+           DiskBox[{50., 0}, 1]}}, {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{5., 0}, 1], 
+           DiskBox[{15., 0}, 1], 
+           DiskBox[{25., 0}, 1], 
+           DiskBox[{35., 0}, 1], 
+           DiskBox[{45., 0}, 1]}}}], 
        FractionBox["\"polynom\"", 
         SuperscriptBox[
          RowBox[{"(", 
            RowBox[{"1", "-", 
-             SuperscriptBox["t", "2"]}], ")"}], "26"]], "\"...\"", 
+             SuperscriptBox["t", "2"]}], ")"}], "38"]], "\"...\"", 
        "\"...\""}, {
        RowBox[{"{", 
-         RowBox[{"5", ",", "3", ",", "1"}], "}"}], "28", "14", 
+         RowBox[{
+           
+           TemplateBox[{"4", "2"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox], ",", "3"}], "}"}], "40", "20", 
        RowBox[{"{", 
-         RowBox[{"3", ",", 
+         RowBox[{
+           
+           TemplateBox[{"3", "3"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox], ",", "2"}], "}"}], 
+       GraphicsBox[{{
+          EdgeForm[{
+            Thickness[Tiny], 
+            RGBColor[0, 0, 1]}], 
+          GrayLevel[1], 
+          RectangleBox[{1.5, 4.}, {3.5, 1.5}]}, 
+         LineBox[{{2.5, 1.}, {2.5, 1.5}}], {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           CircleBox[{5., 0}, 1]}}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           CircleBox[{2.5, 0}, 1], 
+           CircleBox[{7.5, 0}, 1]}}, {
+          LineBox[{{3.5, 0}, {4., 0}}], 
+          LineBox[{{6., 0}, {6.5, 0}}]}, {
+          InsetBox[
+           FormBox["8", TraditionalForm], {2.5, 0}], 
+          InsetBox[
+           FormBox["5", TraditionalForm], {5., 0}], 
+          InsetBox[
+           FormBox["2", TraditionalForm], {7.5, 0}]}, 
+         InsetBox[
+          FormBox["11", TraditionalForm], {2.5, 3.}]}, 
+        ImageSize -> {165, 40}], "\"...\"", 
+       GraphicsBox[{{
+          GrayLevel[0], 
+          LineBox[{{5., 0}, {50., 0}}]}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{10., 0}, 1], 
+           DiskBox[{20., 0}, 1], 
+           DiskBox[{30., 0}, 1], 
+           DiskBox[{40., 0}, 1], 
+           DiskBox[{50., 0}, 1]}}, {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{5., 0}, 1], 
+           DiskBox[{15., 0}, 1], 
+           DiskBox[{25., 0}, 1], 
+           DiskBox[{35., 0}, 1], 
+           DiskBox[{45., 0}, 1]}}}], 
+       FractionBox["\"polynom\"", 
+        SuperscriptBox[
+         RowBox[{"(", 
+           RowBox[{"1", "-", 
+             SuperscriptBox["t", "2"]}], ")"}], "40"]], "\"...\"", 
+       "\"...\""}, {
+       RowBox[{"{", 
+         RowBox[{"5", ",", "3", ",", 
+           
+           TemplateBox[{"1", "3"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox]}], "}"}], "40", "20", 
+       RowBox[{"{", 
+         RowBox[{"5", ",", 
            
            TemplateBox[{"2", "2"}, "Superscript", SyntaxForm -> 
             SuperscriptBox], ",", 
@@ -1807,21 +2307,115 @@ Cell[BoxData[
           InsetBox[
            FormBox["1", TraditionalForm], {10., 0}]}, 
          InsetBox[
-          FormBox["9", TraditionalForm], {2.5, 3.}]}, ImageSize -> {135, 40}],
-        "\"...\"", "\".-.\"", 
+          FormBox["11", TraditionalForm], {2.5, 3.}]}, 
+        ImageSize -> {165, 40}], "\"...\"", 
+       GraphicsBox[{{
+          GrayLevel[0], 
+          LineBox[{{5., 0}, {50., 0}}]}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{10., 0}, 1], 
+           DiskBox[{20., 0}, 1], 
+           DiskBox[{30., 0}, 1], 
+           DiskBox[{40., 0}, 1], 
+           DiskBox[{50., 0}, 1]}}, {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{5., 0}, 1], 
+           DiskBox[{15., 0}, 1], 
+           DiskBox[{25., 0}, 1], 
+           DiskBox[{35., 0}, 1], 
+           DiskBox[{45., 0}, 1]}}}], 
        FractionBox["\"polynom\"", 
         SuperscriptBox[
          RowBox[{"(", 
            RowBox[{"1", "-", 
-             SuperscriptBox["t", "2"]}], ")"}], "28"]], "\"...\"", 
+             SuperscriptBox["t", "2"]}], ")"}], "40"]], "\"...\"", 
        "\"...\""}, {
+       RowBox[{"{", 
+         RowBox[{"5", ",", 
+           
+           TemplateBox[{"3", "2"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox]}], "}"}], "42", "21", 
+       RowBox[{"{", 
+         RowBox[{
+           
+           TemplateBox[{"3", "3"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox], ",", 
+           
+           TemplateBox[{"1", "2"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox]}], "}"}], 
+       GraphicsBox[{{
+          EdgeForm[{
+            Thickness[Tiny], 
+            RGBColor[0, 0, 1]}], 
+          GrayLevel[1], 
+          RectangleBox[{1.5, 4.}, {3.5, 1.5}]}, 
+         LineBox[{{2.5, 1.}, {2.5, 1.5}}], {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           CircleBox[{5., 0}, 1], 
+           CircleBox[{10., 0}, 1]}}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           CircleBox[{2.5, 0}, 1], 
+           CircleBox[{7.5, 0}, 1]}}, {
+          LineBox[{{3.5, 0}, {4., 0}}], 
+          LineBox[{{6., 0}, {6.5, 0}}], 
+          LineBox[{{8.5, 0}, {9., 0}}]}, {
+          InsetBox[
+           FormBox["8", TraditionalForm], {2.5, 0}], 
+          InsetBox[
+           FormBox["5", TraditionalForm], {5., 0}], 
+          InsetBox[
+           FormBox["2", TraditionalForm], {7.5, 0}], 
+          InsetBox[
+           FormBox["1", TraditionalForm], {10., 0}]}, 
+         InsetBox[
+          FormBox["11", TraditionalForm], {2.5, 3.}]}, 
+        ImageSize -> {165, 40}], "\"...\"", 
+       GraphicsBox[{{
+          GrayLevel[0], 
+          LineBox[{{5., 0}, {50., 0}}]}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{10., 0}, 1], 
+           DiskBox[{20., 0}, 1], 
+           DiskBox[{30., 0}, 1], 
+           DiskBox[{40., 0}, 1], 
+           DiskBox[{50., 0}, 1]}}, {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{5., 0}, 1], 
+           DiskBox[{15., 0}, 1], 
+           DiskBox[{25., 0}, 1], 
+           DiskBox[{35., 0}, 1], 
+           DiskBox[{45., 0}, 1]}}}], 
+       FractionBox["\"polynom\"", 
+        SuperscriptBox[
+         RowBox[{"(", 
+           RowBox[{"1", "-", 
+             SuperscriptBox["t", "2"]}], ")"}], "42"]], "\"...\"", "\"...\""},
+       {
        RowBox[{"{", 
          RowBox[{"7", ",", 
            
-           TemplateBox[{"1", "2"}, "Superscript", SyntaxForm -> 
-            SuperscriptBox]}], "}"}], "30", "15", 
+           TemplateBox[{"1", "4"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox]}], "}"}], "42", "21", 
        RowBox[{"{", 
-         RowBox[{"3", ",", 
+         RowBox[{"5", ",", 
            
            TemplateBox[{"1", "6"}, "Superscript", SyntaxForm -> 
             SuperscriptBox]}], "}"}], 
@@ -1864,21 +2458,274 @@ Cell[BoxData[
           InsetBox[
            FormBox["1", TraditionalForm], {15., 0}]}, 
          InsetBox[
-          FormBox["9", TraditionalForm], {2.5, 3.}]}, ImageSize -> {135, 40}],
-        "\"...\"", "\".-.\"", 
+          FormBox["11", TraditionalForm], {2.5, 3.}]}, 
+        ImageSize -> {165, 40}], "\"...\"", 
+       GraphicsBox[{{
+          GrayLevel[0], 
+          LineBox[{{5., 0}, {50., 0}}]}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{10., 0}, 1], 
+           DiskBox[{20., 0}, 1], 
+           DiskBox[{30., 0}, 1], 
+           DiskBox[{40., 0}, 1], 
+           DiskBox[{50., 0}, 1]}}, {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{5., 0}, 1], 
+           DiskBox[{15., 0}, 1], 
+           DiskBox[{25., 0}, 1], 
+           DiskBox[{35., 0}, 1], 
+           DiskBox[{45., 0}, 1]}}}], 
        FractionBox["\"polynom\"", 
         SuperscriptBox[
          RowBox[{"(", 
            RowBox[{"1", "-", 
-             SuperscriptBox["t", "2"]}], ")"}], "30"]], "\"...\"", 
-       RowBox[{"1", "-", 
-         RowBox[{
-           SuperscriptBox["t", "8"], " ", 
-           SubscriptBox["h", "1"]}]}]}, {
-       RowBox[{"{", "9", "}"}], "32", "16", 
+             SuperscriptBox["t", "2"]}], ")"}], "42"]], "\"...\"", 
+       "\"...\""}, {
        RowBox[{"{", 
-         TemplateBox[{"1", "9"}, "Superscript", SyntaxForm -> SuperscriptBox],
-          "}"}], 
+         RowBox[{
+           
+           TemplateBox[{"5", "2"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox], ",", "1"}], "}"}], "44", "22", 
+       RowBox[{"{", 
+         RowBox[{"3", ",", 
+           
+           TemplateBox[{"2", "4"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox]}], "}"}], 
+       GraphicsBox[{{
+          EdgeForm[{
+            Thickness[Tiny], 
+            RGBColor[0, 0, 1]}], 
+          GrayLevel[1], 
+          RectangleBox[{1.5, 4.}, {3.5, 1.5}]}, 
+         LineBox[{{2.5, 1.}, {2.5, 1.5}}], {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           CircleBox[{5., 0}, 1], 
+           CircleBox[{10., 0}, 1]}}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           CircleBox[{2.5, 0}, 1], 
+           CircleBox[{7.5, 0}, 1]}}, {
+          LineBox[{{3.5, 0}, {4., 0}}], 
+          LineBox[{{6., 0}, {6.5, 0}}], 
+          LineBox[{{8.5, 0}, {9., 0}}]}, {
+          InsetBox[
+           FormBox["8", TraditionalForm], {2.5, 0}], 
+          InsetBox[
+           FormBox["6", TraditionalForm], {5., 0}], 
+          InsetBox[
+           FormBox["4", TraditionalForm], {7.5, 0}], 
+          InsetBox[
+           FormBox["2", TraditionalForm], {10., 0}]}, 
+         InsetBox[
+          FormBox["11", TraditionalForm], {2.5, 3.}]}, 
+        ImageSize -> {165, 40}], "\"...\"", 
+       GraphicsBox[{{
+          GrayLevel[0], 
+          LineBox[{{5., 0}, {50., 0}}]}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{10., 0}, 1], 
+           DiskBox[{20., 0}, 1], 
+           DiskBox[{30., 0}, 1], 
+           DiskBox[{40., 0}, 1], 
+           DiskBox[{50., 0}, 1]}}, {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{5., 0}, 1], 
+           DiskBox[{15., 0}, 1], 
+           DiskBox[{25., 0}, 1], 
+           DiskBox[{35., 0}, 1], 
+           DiskBox[{45., 0}, 1]}}}], 
+       FractionBox["\"polynom\"", 
+        SuperscriptBox[
+         RowBox[{"(", 
+           RowBox[{"1", "-", 
+             SuperscriptBox["t", "2"]}], ")"}], "44"]], "\"...\"", 
+       "\"...\""}, {
+       RowBox[{"{", 
+         RowBox[{"7", ",", 
+           
+           TemplateBox[{"2", "2"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox]}], "}"}], "44", "22", 
+       RowBox[{"{", 
+         RowBox[{
+           
+           TemplateBox[{"3", "2"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox], ",", 
+           
+           TemplateBox[{"1", "5"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox]}], "}"}], 
+       GraphicsBox[{{
+          EdgeForm[{
+            Thickness[Tiny], 
+            RGBColor[0, 0, 1]}], 
+          GrayLevel[1], 
+          RectangleBox[{1.5, 4.}, {3.5, 1.5}]}, 
+         LineBox[{{2.5, 1.}, {2.5, 1.5}}], {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           CircleBox[{5., 0}, 1], 
+           CircleBox[{10., 0}, 1], 
+           CircleBox[{15., 0}, 1]}}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           CircleBox[{2.5, 0}, 1], 
+           CircleBox[{7.5, 0}, 1], 
+           CircleBox[{12.5, 0}, 1]}}, {
+          LineBox[{{3.5, 0}, {4., 0}}], 
+          LineBox[{{6., 0}, {6.5, 0}}], 
+          LineBox[{{8.5, 0}, {9., 0}}], 
+          LineBox[{{11., 0}, {11.5, 0}}], 
+          LineBox[{{13.5, 0}, {14., 0}}]}, {
+          InsetBox[
+           FormBox["8", TraditionalForm], {2.5, 0}], 
+          InsetBox[
+           FormBox["5", TraditionalForm], {5., 0}], 
+          InsetBox[
+           FormBox["4", TraditionalForm], {7.5, 0}], 
+          InsetBox[
+           FormBox["3", TraditionalForm], {10., 0}], 
+          InsetBox[
+           FormBox["2", TraditionalForm], {12.5, 0}], 
+          InsetBox[
+           FormBox["1", TraditionalForm], {15., 0}]}, 
+         InsetBox[
+          FormBox["11", TraditionalForm], {2.5, 3.}]}, 
+        ImageSize -> {165, 40}], "\"...\"", 
+       GraphicsBox[{{
+          GrayLevel[0], 
+          LineBox[{{5., 0}, {50., 0}}]}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{10., 0}, 1], 
+           DiskBox[{20., 0}, 1], 
+           DiskBox[{30., 0}, 1], 
+           DiskBox[{40., 0}, 1], 
+           DiskBox[{50., 0}, 1]}}, {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{5., 0}, 1], 
+           DiskBox[{15., 0}, 1], 
+           DiskBox[{25., 0}, 1], 
+           DiskBox[{35., 0}, 1], 
+           DiskBox[{45., 0}, 1]}}}], 
+       FractionBox["\"polynom\"", 
+        SuperscriptBox[
+         RowBox[{"(", 
+           RowBox[{"1", "-", 
+             SuperscriptBox["t", "2"]}], ")"}], "44"]], "\"...\"", 
+       "\"...\""}, {
+       RowBox[{"{", 
+         RowBox[{"7", ",", "3", ",", "1"}], "}"}], "46", "23", 
+       RowBox[{"{", 
+         RowBox[{"3", ",", 
+           
+           TemplateBox[{"2", "2"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox], ",", 
+           
+           TemplateBox[{"1", "4"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox]}], "}"}], 
+       GraphicsBox[{{
+          EdgeForm[{
+            Thickness[Tiny], 
+            RGBColor[0, 0, 1]}], 
+          GrayLevel[1], 
+          RectangleBox[{1.5, 4.}, {3.5, 1.5}]}, 
+         LineBox[{{2.5, 1.}, {2.5, 1.5}}], {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           CircleBox[{5., 0}, 1], 
+           CircleBox[{10., 0}, 1], 
+           CircleBox[{15., 0}, 1]}}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           CircleBox[{2.5, 0}, 1], 
+           CircleBox[{7.5, 0}, 1], 
+           CircleBox[{12.5, 0}, 1]}}, {
+          LineBox[{{3.5, 0}, {4., 0}}], 
+          LineBox[{{6., 0}, {6.5, 0}}], 
+          LineBox[{{8.5, 0}, {9., 0}}], 
+          LineBox[{{11., 0}, {11.5, 0}}], 
+          LineBox[{{13.5, 0}, {14., 0}}]}, {
+          InsetBox[
+           FormBox["8", TraditionalForm], {2.5, 0}], 
+          InsetBox[
+           FormBox["6", TraditionalForm], {5., 0}], 
+          InsetBox[
+           FormBox["4", TraditionalForm], {7.5, 0}], 
+          InsetBox[
+           FormBox["3", TraditionalForm], {10., 0}], 
+          InsetBox[
+           FormBox["2", TraditionalForm], {12.5, 0}], 
+          InsetBox[
+           FormBox["1", TraditionalForm], {15., 0}]}, 
+         InsetBox[
+          FormBox["11", TraditionalForm], {2.5, 3.}]}, 
+        ImageSize -> {165, 40}], "\"...\"", 
+       GraphicsBox[{{
+          GrayLevel[0], 
+          LineBox[{{5., 0}, {50., 0}}]}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{10., 0}, 1], 
+           DiskBox[{20., 0}, 1], 
+           DiskBox[{30., 0}, 1], 
+           DiskBox[{40., 0}, 1], 
+           DiskBox[{50., 0}, 1]}}, {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{5., 0}, 1], 
+           DiskBox[{15., 0}, 1], 
+           DiskBox[{25., 0}, 1], 
+           DiskBox[{35., 0}, 1], 
+           DiskBox[{45., 0}, 1]}}}], 
+       FractionBox["\"polynom\"", 
+        SuperscriptBox[
+         RowBox[{"(", 
+           RowBox[{"1", "-", 
+             SuperscriptBox["t", "2"]}], ")"}], "46"]], "\"...\"", 
+       "\"...\""}, {
+       RowBox[{"{", 
+         RowBox[{"9", ",", 
+           
+           TemplateBox[{"1", "2"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox]}], "}"}], "48", "24", 
+       RowBox[{"{", 
+         RowBox[{"3", ",", 
+           
+           TemplateBox[{"1", "8"}, "Superscript", SyntaxForm -> 
+            SuperscriptBox]}], "}"}], 
        GraphicsBox[{{
           EdgeForm[{
             Thickness[Tiny], 
@@ -1926,20 +2773,132 @@ Cell[BoxData[
           InsetBox[
            FormBox["1", TraditionalForm], {20., 0}]}, 
          InsetBox[
-          FormBox["9", TraditionalForm], {2.5, 3.}]}, ImageSize -> {135, 40}],
-        "\"...\"", "\".-.\"", 
+          FormBox["11", TraditionalForm], {2.5, 3.}]}, 
+        ImageSize -> {165, 40}], "\"...\"", 
+       GraphicsBox[{{
+          GrayLevel[0], 
+          LineBox[{{5., 0}, {50., 0}}]}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{10., 0}, 1], 
+           DiskBox[{20., 0}, 1], 
+           DiskBox[{30., 0}, 1], 
+           DiskBox[{40., 0}, 1], 
+           DiskBox[{50., 0}, 1]}}, {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{5., 0}, 1], 
+           DiskBox[{15., 0}, 1], 
+           DiskBox[{25., 0}, 1], 
+           DiskBox[{35., 0}, 1], 
+           DiskBox[{45., 0}, 1]}}}], 
        FractionBox["\"polynom\"", 
         SuperscriptBox[
          RowBox[{"(", 
            RowBox[{"1", "-", 
-             SuperscriptBox["t", "2"]}], ")"}], "30"]], "\"...\"", "1"}}, 
+             SuperscriptBox["t", "2"]}], ")"}], "48"]], "\"...\"", 
+       RowBox[{"1", "-", 
+         RowBox[{
+           SuperscriptBox["t", "10"], " ", 
+           SubscriptBox["h", "1"]}]}]}, {
+       RowBox[{"{", "11", "}"}], "50", "25", 
+       RowBox[{"{", 
+         TemplateBox[{"1", "11"}, "Superscript", SyntaxForm -> 
+          SuperscriptBox], "}"}], 
+       GraphicsBox[{{
+          EdgeForm[{
+            Thickness[Tiny], 
+            RGBColor[0, 0, 1]}], 
+          GrayLevel[1], 
+          RectangleBox[{1.5, 4.}, {3.5, 1.5}]}, 
+         LineBox[{{2.5, 1.}, {2.5, 1.5}}], {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           CircleBox[{5., 0}, 1], 
+           CircleBox[{10., 0}, 1], 
+           CircleBox[{15., 0}, 1], 
+           CircleBox[{20., 0}, 1], 
+           CircleBox[{25., 0}, 1]}}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           CircleBox[{2.5, 0}, 1], 
+           CircleBox[{7.5, 0}, 1], 
+           CircleBox[{12.5, 0}, 1], 
+           CircleBox[{17.5, 0}, 1], 
+           CircleBox[{22.5, 0}, 1]}}, {
+          LineBox[{{3.5, 0}, {4., 0}}], 
+          LineBox[{{6., 0}, {6.5, 0}}], 
+          LineBox[{{8.5, 0}, {9., 0}}], 
+          LineBox[{{11., 0}, {11.5, 0}}], 
+          LineBox[{{13.5, 0}, {14., 0}}], 
+          LineBox[{{16., 0}, {16.5, 0}}], 
+          LineBox[{{18.5, 0}, {19., 0}}], 
+          LineBox[{{21., 0}, {21.5, 0}}], 
+          LineBox[{{23.5, 0}, {24., 0}}]}, {
+          InsetBox[
+           FormBox["10", TraditionalForm], {2.5, 0}], 
+          InsetBox[
+           FormBox["9", TraditionalForm], {5., 0}], 
+          InsetBox[
+           FormBox["8", TraditionalForm], {7.5, 0}], 
+          InsetBox[
+           FormBox["7", TraditionalForm], {10., 0}], 
+          InsetBox[
+           FormBox["6", TraditionalForm], {12.5, 0}], 
+          InsetBox[
+           FormBox["5", TraditionalForm], {15., 0}], 
+          InsetBox[
+           FormBox["4", TraditionalForm], {17.5, 0}], 
+          InsetBox[
+           FormBox["3", TraditionalForm], {20., 0}], 
+          InsetBox[
+           FormBox["2", TraditionalForm], {22.5, 0}], 
+          InsetBox[
+           FormBox["1", TraditionalForm], {25., 0}]}, 
+         InsetBox[
+          FormBox["11", TraditionalForm], {2.5, 3.}]}, 
+        ImageSize -> {165, 40}], "\"...\"", 
+       GraphicsBox[{{
+          GrayLevel[0], 
+          LineBox[{{5., 0}, {50., 0}}]}, {
+          RGBColor[
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{10., 0}, 1], 
+           DiskBox[{20., 0}, 1], 
+           DiskBox[{30., 0}, 1], 
+           DiskBox[{40., 0}, 1], 
+           DiskBox[{50., 0}, 1]}}, {
+          RGBColor[0, 
+           NCache[
+            Rational[2, 3], 0.6666666666666666], 0], {
+           DiskBox[{5., 0}, 1], 
+           DiskBox[{15., 0}, 1], 
+           DiskBox[{25., 0}, 1], 
+           DiskBox[{35., 0}, 1], 
+           DiskBox[{45., 0}, 1]}}}], 
+       FractionBox["\"polynom\"", 
+        SuperscriptBox[
+         RowBox[{"(", 
+           RowBox[{"1", "-", 
+             SuperscriptBox["t", "2"]}], ")"}], "48"]], "\"...\"", "1"}}, 
      GridBoxAlignment -> {"Columns" -> {{Left}}}, AutoDelete -> False, 
      GridBoxBackground -> {"Columns" -> {{None}}, "Rows" -> {
          RGBColor[0.87, 0.94, 1]}}, 
      GridBoxFrame -> {"Columns" -> {{True}}, "Rows" -> {{True}}}, 
      GridBoxItemSize -> {"Columns" -> {{Automatic}}, "Rows" -> {{2}}}], 
     "Grid"],"\"Moduli Space Quivers for Nilpotent Orbits of \
-\\!\\(\\*FormBox[SubscriptBox[\\\"\\\\\\\"B\\\\\\\"\\\", \\\"4\\\"], \
+\\!\\(\\*FormBox[SubscriptBox[\\\"\\\\\\\"B\\\\\\\"\\\", \\\"5\\\"], \
 TraditionalForm]\\)\""},
   "Labeled",
   DisplayFunction->(GridBox[{{
@@ -2090,7 +3049,9 @@ TraditionalForm]\\)\""},
    3.674666409125248*^9, 3.674666452145701*^9, 3.674666499516865*^9, {
    3.674794378623733*^9, 3.674794388739506*^9}, 3.6747954441020613`*^9, 
    3.674797076998117*^9, 3.67479714315233*^9, 3.674797178458411*^9, 
-   3.674812603666996*^9}]
+   3.674812603666996*^9, 3.674909346122325*^9, {3.6749095863993807`*^9, 
+   3.674909611937003*^9}, 3.6749096437246733`*^9, {3.6749097097349453`*^9, 
+   3.6749097222346163`*^9}}]
 }, Open  ]],
 
 Cell[BoxData[
@@ -2143,7 +3104,7 @@ Cell[BoxData[""], "Input",
  CellChangeTimes->{3.674576399342505*^9, 3.674656293501945*^9}]
 },
 WindowSize->{960, 1043},
-WindowMargins->{{Automatic, 51}, {Automatic, 28}},
+WindowMargins->{{Automatic, 950}, {-10, Automatic}},
 FrontEndVersion->"10.4 for Linux x86 (64-bit) (April 15, 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -2158,14 +3119,14 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 56502, 1179, 2891, "Input"],
+Cell[558, 20, 59389, 1248, 3023, "Input"],
 Cell[CellGroupData[{
-Cell[57085, 1203, 3986, 55, 32, "Input"],
-Cell[61074, 1260, 35173, 832, 830, "Output"]
+Cell[59972, 1272, 4036, 56, 32, "Input"],
+Cell[64011, 1330, 65585, 1723, 1362, "Output"]
 }, Open  ]],
-Cell[96262, 2095, 631, 15, 99, "Input"],
-Cell[96896, 2112, 1534, 27, 55, "Input"],
-Cell[98433, 2141, 90, 1, 65, "Input"]
+Cell[129611, 3056, 631, 15, 99, "Input"],
+Cell[130245, 3073, 1534, 27, 55, "Input"],
+Cell[131782, 3102, 90, 1, 32, "Input"]
 }
 ]
 *)

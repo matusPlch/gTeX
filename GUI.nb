@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       161,          7]
-NotebookDataLength[      9761,        227]
-NotebookOptionsPosition[      9153,        203]
-NotebookOutlinePosition[      9491,        218]
-CellTagsIndexPosition[      9448,        215]
+NotebookDataLength[      9995,        228]
+NotebookOptionsPosition[      9388,        204]
+NotebookOutlinePosition[      9726,        219]
+CellTagsIndexPosition[      9683,        216]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -24,13 +24,13 @@ Cell[BoxData[{
  RowBox[{
   RowBox[{
   "Import", "[", 
-   "\"\</home/m3rlin/Documents/Wolfram Desktop/gTeX/Aseries.xx.nb\>\"", "]"}],
-   ";"}], "\[IndentingNewLine]", 
+   "\"\</home/m3rlin/Documents/Wolfram Desktop/gTeX/Aseries.nb\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
   "Import", "[", 
-   "\"\</home/m3rlin/Documents/Wolfram Desktop/gTeX/Bseries.xx.nb\>\"", "]"}],
-   ";"}], "\[IndentingNewLine]", 
+   "\"\</home/m3rlin/Documents/Wolfram Desktop/gTeX/Bseries.nb\>\"", "]"}], 
+  ";"}], "\[IndentingNewLine]", 
  RowBox[{
   RowBox[{
    RowBox[{
@@ -59,31 +59,25 @@ Cell[BoxData[{
          RowBox[{"{", 
           RowBox[{"Aseries", ",", "Bseries", ",", "Cseries", ",", "Dseries"}],
            "}"}]}], "}"}]}], "]"}], "\[IndentingNewLine]", 
-     "\[IndentingNewLine]", "]"}], "]"}], "\[IndentingNewLine]", 
-   "*)"}]}], "\[IndentingNewLine]", 
- RowBox[{"a", " ", "=", 
-  RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
-   RowBox[{
-    RowBox[{"TabView", "[", 
-     RowBox[{"Table", "[", 
-      RowBox[{
-       RowBox[{"n", "\[Rule]", 
-        RowBox[{"function", "[", "n", "]"}]}], ",", 
-       RowBox[{"{", 
-        RowBox[{"n", ",", "2", ",", "5"}], "}"}]}], "]"}], "]"}], ",", 
-    "\[IndentingNewLine]", 
-    RowBox[{"{", 
-     RowBox[{"function", ",", " ", 
-      RowBox[{"{", 
-       RowBox[{"Aseries", ",", "Bseries", ",", "Cseries", ",", "Dseries"}], 
-       "}"}]}], "}"}]}], "\[IndentingNewLine]", 
-   "]"}]}], "\[IndentingNewLine]", 
+     "\[IndentingNewLine]", "]"}], "]"}], "\[IndentingNewLine]", "*)"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
  RowBox[{
-  RowBox[{"CloudExport", "[", 
-   RowBox[{
-    RowBox[{"D", "\\\[IndentingNewLine]", "\[IndentingNewLine]", "a"}], 
-    "\[IndentingNewLine]", ",", "\"\<NB\>\"", ",", 
-    RowBox[{"Permissions", "\[Rule]", "\"\<Public\>\""}]}], "]"}], 
+  RowBox[{"a", " ", "=", 
+   RowBox[{"Manipulate", "[", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"TabView", "[", 
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"n", "\[Rule]", 
+         RowBox[{"function", "[", "n", "]"}]}], ",", 
+        RowBox[{"{", 
+         RowBox[{"n", ",", "2", ",", "5"}], "}"}]}], "]"}], "]"}], ",", 
+     "\[IndentingNewLine]", 
+     RowBox[{"{", 
+      RowBox[{"function", ",", " ", 
+       RowBox[{"{", 
+        RowBox[{"Aseries", ",", "Bseries", ",", "Cseries", ",", "Dseries"}], 
+        "}"}]}], "}"}]}], "\[IndentingNewLine]", "]"}]}], 
   "\[IndentingNewLine]", 
   "\[IndentingNewLine]"}], "\[IndentingNewLine]"}], "Input",
  CellChangeTimes->{{3.673020876584094*^9, 3.67302089358188*^9}, {
@@ -119,8 +113,11 @@ Cell[BoxData[{
    3.67480382412094*^9, 3.674803871085586*^9}, {3.674803969832527*^9, 
    3.674803997775223*^9}, {3.674804063752617*^9, 3.674804113304388*^9}, {
    3.6748042581209097`*^9, 3.674804258657539*^9}, {3.674804578758659*^9, 
-   3.674804579838152*^9}, {3.674804627034615*^9, 3.674804628962961*^9}},
- EmphasizeSyntaxErrors->True],
+   3.674804579838152*^9}, {3.674804627034615*^9, 3.674804664181972*^9}, {
+   3.674804783206545*^9, 3.674804803009246*^9}, {3.674804840675333*^9, 
+   3.674804864485909*^9}, {3.674804935127556*^9, 3.674805000334203*^9}, {
+   3.674805055782033*^9, 3.6748050600724173`*^9}, {3.6748050978093157`*^9, 
+   3.674805106326535*^9}}],
 
 Cell[BoxData[
  TagBox[
@@ -131,14 +128,14 @@ Cell[BoxData[
     1, Typeset`name$$ = "\"untitled\"", Typeset`specs$$ = {{
       Hold[$CellContext`function$$], {$CellContext`Aseries, \
 $CellContext`Bseries, $CellContext`Cseries, $CellContext`Dseries}}}, 
-    Typeset`size$$ = {1188., {622., 629.}}, Typeset`update$$ = 0, 
+    Typeset`size$$ = {1028., {733., 740.}}, Typeset`update$$ = 0, 
     Typeset`initDone$$, Typeset`skipInitDone$$ = 
-    True, $CellContext`function$40639$$ = 0}, 
+    True, $CellContext`function$55815$$ = 0}, 
     DynamicBox[Manipulate`ManipulateBoxes[
      1, StandardForm, 
       "Variables" :> {$CellContext`function$$ = $CellContext`Aseries}, 
       "ControllerVariables" :> {
-        Hold[$CellContext`function$$, $CellContext`function$40639$$, 0]}, 
+        Hold[$CellContext`function$$, $CellContext`function$55815$$, 0]}, 
       "OtherVariables" :> {
        Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
         Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
@@ -149,7 +146,7 @@ $CellContext`Bseries, $CellContext`Cseries, $CellContext`Dseries}}},
       "Specifications" :> {{$CellContext`function$$, {$CellContext`Aseries, \
 $CellContext`Bseries, $CellContext`Cseries, $CellContext`Dseries}}}, 
       "Options" :> {}, "DefaultOptions" :> {}],
-     ImageSizeCache->{1235., {795., 802.}},
+     ImageSizeCache->{1075., {779., 786.}},
      SingleEvaluation->True],
     Deinitialization:>None,
     DynamicModuleValues:>{},
@@ -172,7 +169,11 @@ $CellContext`Bseries, $CellContext`Cseries, $CellContext`Dseries}}},
    3.6748015327874727`*^9}, {3.674801654007401*^9, 3.674801672783943*^9}, 
    3.6748017053728437`*^9, 3.6748039735843353`*^9, {3.674804115234437*^9, 
    3.674804126910623*^9}, {3.674804247550744*^9, 3.674804261126566*^9}, 
-   3.67480458104993*^9, {3.674804630233245*^9, 3.674804635012863*^9}}]
+   3.67480458104993*^9, {3.674804630233245*^9, 3.674804635012863*^9}, {
+   3.674804671324464*^9, 3.674804675758514*^9}, {3.674804799986682*^9, 
+   3.674804804560667*^9}, {3.674804842432034*^9, 3.6748048660098257`*^9}, {
+   3.674804937060618*^9, 3.674805001763769*^9}, 3.674805061981854*^9, 
+   3.674805184533803*^9}]
 }, Open  ]],
 
 Cell[BoxData[""], "Input",
@@ -202,7 +203,7 @@ Cell[BoxData[""], "Input",
  CellChangeTimes->{{3.673368242999476*^9, 3.673368243002302*^9}}]
 },
 WindowSize->{1024, 518},
-WindowMargins->{{Automatic, 233}, {Automatic, 167}},
+WindowMargins->{{Automatic, 118}, {224, Automatic}},
 FrontEndVersion->"10.4 for Linux x86 (64-bit) (April 15, 2016)",
 StyleDefinitions->"Default.nb"
 ]
@@ -218,17 +219,17 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[583, 22, 4883, 100, 539, "Input"],
-Cell[5469, 124, 2761, 50, 1647, "Output"]
+Cell[583, 22, 4872, 97, 473, "Input"],
+Cell[5458, 121, 3007, 54, 1582, "Output"]
 }, Open  ]],
-Cell[8245, 177, 92, 1, 32, "Input"],
-Cell[8340, 180, 186, 2, 55, "Input"],
-Cell[8529, 184, 92, 1, 32, "Input"],
-Cell[8624, 187, 92, 1, 32, "Input"],
-Cell[8719, 190, 92, 1, 32, "Input"],
-Cell[8814, 193, 141, 2, 32, "Input"],
-Cell[8958, 197, 96, 1, 32, "Input"],
-Cell[9057, 200, 92, 1, 32, "Input"]
+Cell[8480, 178, 92, 1, 32, "Input"],
+Cell[8575, 181, 186, 2, 55, "Input"],
+Cell[8764, 185, 92, 1, 32, "Input"],
+Cell[8859, 188, 92, 1, 32, "Input"],
+Cell[8954, 191, 92, 1, 32, "Input"],
+Cell[9049, 194, 141, 2, 32, "Input"],
+Cell[9193, 198, 96, 1, 32, "Input"],
+Cell[9292, 201, 92, 1, 65, "Input"]
 }
 ]
 *)
